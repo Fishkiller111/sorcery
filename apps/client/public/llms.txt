@@ -1,0 +1,3 @@
+# Self-hosted instance
+
+Deployment owner should provide accurate product and service details.

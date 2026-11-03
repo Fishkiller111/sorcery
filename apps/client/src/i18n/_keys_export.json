@@ -1,0 +1,2652 @@
+[
+  {
+    "path": "index.episode",
+    "zh": "序章 1/4",
+    "en": "Prologue 1/4"
+  },
+  {
+    "path": "index.title",
+    "zh": "假面",
+    "en": "Mask"
+  },
+  {
+    "path": "index.subtitle",
+    "zh": "场景 01 · s0_01",
+    "en": "Scene 01 · s0_01"
+  },
+  {
+    "path": "index.prologue1",
+    "zh": "天色均一灰沉，低低压在大地上。锤镰旗在风里猎猎作响，拂过一个被重铸的世界废墟。地平线之外，一座浅蓝巨构刺穿云层——那是目的的纪念碑，也是人类下一继承体的引擎。",
+    "en": "The sky is a uniform grey, pressed low against the earth. A hammer-and-sickle flag snaps in the wind above the ruins of a world remade. Beyond the horizon, a pale-blue megastructure pierces the clouds—monument to purpose, engine of humanity's next inheritance."
+  },
+  {
+    "path": "index.prologue2",
+    "zh": "星际舰群无声集结，航向未知的星系。它们承载的不是征服，而是延续。从地球灰烬之中，苏维埃人类再度诞生——在群星之间，不屈、不妥协、永恒。",
+    "en": "Interstellar vessels gather in silent formation, bound for systems unknown. They carry not conquest, but continuation. From Earth's ashes, Soviet humanity is born anew—among the stars, unbroken, uncompromising, eternal."
+  },
+  {
+    "path": "index.dateText",
+    "zh": "1997 年 · 美国已不存在 · 第六年",
+    "en": "1997 · America no longer exists · Year Six"
+  },
+  {
+    "path": "index.enter",
+    "zh": "进入场景",
+    "en": "Enter Scene"
+  },
+  {
+    "path": "index.enterDecorated",
+    "zh": "★  进入场景  ★",
+    "en": "★  Enter Scene  ★"
+  },
+  {
+    "path": "index.chapterBrand",
+    "zh": "赤色长夜",
+    "en": "Red Long Night"
+  },
+  {
+    "path": "input.placeholder",
+    "zh": "输入动作或台词…",
+    "en": "Enter action or dialogue..."
+  },
+  {
+    "path": "input.send",
+    "zh": "发送",
+    "en": "Send"
+  },
+  {
+    "path": "input.holdToTalk",
+    "zh": "按住说话",
+    "en": "Hold to talk"
+  },
+  {
+    "path": "scene.rewardContinue",
+    "zh": "继续……",
+    "en": "Continue..."
+  },
+  {
+    "path": "scene.loading",
+    "zh": "加载中...",
+    "en": "Loading..."
+  },
+  {
+    "path": "scene.taskTitle",
+    "zh": "当前目标",
+    "en": "Objective"
+  },
+  {
+    "path": "scene.beatProgress",
+    "zh": "节拍 {current}/{total}",
+    "en": "Beat {current}/{total}"
+  },
+  {
+    "path": "scene.taskHint",
+    "zh": "可点下方金色快捷句，或输入动作/台词推进",
+    "en": "Tap gold quick phrases below, or type an action / line"
+  },
+  {
+    "path": "scene.taskBeatDone",
+    "zh": "本节拍目标已达成，继续对话以推进剧情",
+    "en": "Beat objective met — keep talking to advance"
+  },
+  {
+    "path": "scene.taskFallback",
+    "zh": "观察环境，与角色互动，推进当前节拍",
+    "en": "Observe, interact, and advance the current beat"
+  },
+  {
+    "path": "scene.taskRewardBranch",
+    "zh": "奖励分支 · 可选探索",
+    "en": "Reward branch · optional"
+  },
+  {
+    "path": "matureGate.title",
+    "zh": "内容档位选择",
+    "en": "Content Tier Selection"
+  },
+  {
+    "path": "matureGate.subtitle",
+    "zh": "本场景包含 Standard / Mature 两个版本。",
+    "en": "This scene has two versions: Standard / Mature."
+  },
+  {
+    "path": "matureGate.standardTitle",
+    "zh": "Standard · 标准版",
+    "en": "Standard · Standard Version"
+  },
+  {
+    "path": "matureGate.standardHint",
+    "zh": "暗示、切镜、无裸露血腥",
+    "en": "Implied, cutaway shots, no nudity or gore"
+  },
+  {
+    "path": "matureGate.matureTitle",
+    "zh": "Mature · 完整版",
+    "en": "Mature · Full Version"
+  },
+  {
+    "path": "matureGate.matureHint",
+    "zh": "含裸露、暴力、血腥画面与音效",
+    "en": "Contains nudity, violence, gore visuals and sound effects"
+  },
+  {
+    "path": "matureGate.warning",
+    "zh": "Mature 内容仅限 18+ 用户。是否确认进入完整版？",
+    "en": "Mature content is for 18+ users only. Confirm entering the full version?"
+  },
+  {
+    "path": "matureGate.confirmTitle",
+    "zh": "18+ 内容警告",
+    "en": "18+ Warning"
+  },
+  {
+    "path": "matureGate.confirm",
+    "zh": "确认，我已满 18 岁",
+    "en": "Confirm, I am 18 or older"
+  },
+  {
+    "path": "matureGate.back",
+    "zh": "返回选择",
+    "en": "Return to selection"
+  },
+  {
+    "path": "confirmModal.cancel",
+    "zh": "取消",
+    "en": "Cancel"
+  },
+  {
+    "path": "confirmModal.confirm",
+    "zh": "确认",
+    "en": "Confirm"
+  },
+  {
+    "path": "sceneClear.title",
+    "zh": "场景通关",
+    "en": "Scene Cleared"
+  },
+  {
+    "path": "sceneClear.subtitle",
+    "zh": "序章 1/4 · 假面",
+    "en": "Prologue 1/4 · Mask"
+  },
+  {
+    "path": "sceneClear.flags",
+    "zh": "已收集标记",
+    "en": "Collected Flags"
+  },
+  {
+    "path": "sceneClear.rewards",
+    "zh": "章内奖励进度",
+    "en": "Chapter Reward Progress"
+  },
+  {
+    "path": "sceneClear.replay",
+    "zh": "重新体验",
+    "en": "Replay"
+  },
+  {
+    "path": "badEnd.title",
+    "zh": "本场景失败 · 监听器从未关掉",
+    "en": "Scene Failed · The Surveillance Device Was Never Turned Off"
+  },
+  {
+    "path": "badEnd.retry",
+    "zh": "从此场景重试",
+    "en": "Retry from this scene"
+  },
+  {
+    "path": "badEnd.cannotSkip",
+    "zh": "不可跳过 ({seconds}s)",
+    "en": "Cannot skip ({seconds}s)"
+  },
+  {
+    "path": "system.error",
+    "zh": "错误",
+    "en": "Error"
+  },
+  {
+    "path": "system.ok",
+    "zh": "确定",
+    "en": "OK"
+  },
+  {
+    "path": "system.rewardBranch",
+    "zh": "奖励分支 · R02 · 咳血女工",
+    "en": "Reward Branch · R02 · Coughing Worker"
+  },
+  {
+    "path": "system.returnMain",
+    "zh": "回到主线 · Beat 4 末",
+    "en": "Return to Main Story · End of Beat 4"
+  },
+  {
+    "path": "menu.start",
+    "zh": "开始",
+    "en": "Start"
+  },
+  {
+    "path": "menu.levelSelect",
+    "zh": "关卡选择",
+    "en": "Level Select"
+  },
+  {
+    "path": "menu.settings",
+    "zh": "设置",
+    "en": "Settings"
+  },
+  {
+    "path": "menu.back",
+    "zh": "返回主菜单",
+    "en": "Main Menu"
+  },
+  {
+    "path": "levelSelect.title",
+    "zh": "关卡选择",
+    "en": "Level Select"
+  },
+  {
+    "path": "levelSelect.scene",
+    "zh": "场景",
+    "en": "Scene"
+  },
+  {
+    "path": "levelSelect.jumpTo",
+    "zh": "跳转至",
+    "en": "Jump to"
+  },
+  {
+    "path": "settings.title",
+    "zh": "设置",
+    "en": "Settings"
+  },
+  {
+    "path": "settings.language",
+    "zh": "语言",
+    "en": "Language"
+  },
+  {
+    "path": "settings.contentTier",
+    "zh": "内容档位",
+    "en": "Content Tier"
+  },
+  {
+    "path": "settings.standard",
+    "zh": "标准版",
+    "en": "Standard"
+  },
+  {
+    "path": "settings.mature",
+    "zh": "完整版",
+    "en": "Mature"
+  },
+  {
+    "path": "settings.clearSave",
+    "zh": "清除存档",
+    "en": "Clear Save Data"
+  },
+  {
+    "path": "settings.logout",
+    "zh": "退出登录",
+    "en": "Logout"
+  },
+  {
+    "path": "settings.logoutConfirmTitle",
+    "zh": "退出登录？",
+    "en": "Logout?"
+  },
+  {
+    "path": "settings.logoutConfirmSubtitle",
+    "zh": "确定要退出当前账号吗？",
+    "en": "Are you sure you want to log out?"
+  },
+  {
+    "path": "settings.logoutConfirmBtn",
+    "zh": "退出",
+    "en": "Logout"
+  },
+  {
+    "path": "settings.resetPassword",
+    "zh": "邮箱验证重置密码",
+    "en": "Reset Password via Email"
+  },
+  {
+    "path": "settings.resetPasswordRowTitle",
+    "zh": "邮箱验证重置密码",
+    "en": "Email Verification Reset Password"
+  },
+  {
+    "path": "settings.resetPasswordModalTitle",
+    "zh": "邮箱验证重置密码",
+    "en": "Reset Password via Email"
+  },
+  {
+    "path": "settings.verificationCode",
+    "zh": "验证码",
+    "en": "Verification Code"
+  },
+  {
+    "path": "settings.confirmNewPassword",
+    "zh": "确认新密码",
+    "en": "Confirm New Password"
+  },
+  {
+    "path": "settings.enter6DigitCode",
+    "zh": "输入 6 位验证码",
+    "en": "Enter 6-digit code"
+  },
+  {
+    "path": "settings.enterNewPassword",
+    "zh": "输入新密码",
+    "en": "Enter new password"
+  },
+  {
+    "path": "settings.confirmNewPasswordPlaceholder",
+    "zh": "确认新密码",
+    "en": "Confirm new password"
+  },
+  {
+    "path": "settings.resetPasswordHint",
+    "zh": "验证码将发送至您的邮箱，用于重置登录密码",
+    "en": "A verification code will be sent to your email to reset your password"
+  },
+  {
+    "path": "settings.resetPasswordSuccess",
+    "zh": "密码已重置",
+    "en": "Password reset successfully"
+  },
+  {
+    "path": "settings.resetBtnCancel",
+    "zh": "取消",
+    "en": "CANCEL"
+  },
+  {
+    "path": "settings.resetBtnSendCode",
+    "zh": "发送验证码",
+    "en": "SEND CODE"
+  },
+  {
+    "path": "settings.resetBtnResendCode",
+    "zh": "重新发送",
+    "en": "RESEND"
+  },
+  {
+    "path": "settings.resetBtnSubmit",
+    "zh": "重置密码",
+    "en": "RESET PASSWORD"
+  },
+  {
+    "path": "settings.cancel",
+    "zh": "取消",
+    "en": "Cancel"
+  },
+  {
+    "path": "settings.cleared",
+    "zh": "已清除",
+    "en": "Cleared"
+  },
+  {
+    "path": "settings.saved",
+    "zh": "已保存",
+    "en": "Saved"
+  },
+  {
+    "path": "settings.saveFailed",
+    "zh": "保存失败",
+    "en": "Save failed"
+  },
+  {
+    "path": "settings.matureVipRequired",
+    "zh": "当前套餐不支持 Mature 模式",
+    "en": "Mature mode requires a paid plan"
+  },
+  {
+    "path": "settings.languageHint",
+    "zh": "同步应用界面与 Agent 聊天语音/字幕语言",
+    "en": "Syncs app UI and agent chat voice/subtitle language"
+  },
+  {
+    "path": "nav.home",
+    "zh": "首页",
+    "en": "Home"
+  },
+  {
+    "path": "nav.modes",
+    "zh": "模式",
+    "en": "Modes"
+  },
+  {
+    "path": "nav.profile",
+    "zh": "我的",
+    "en": "Profile"
+  },
+  {
+    "path": "nav.create",
+    "zh": "创建 Agent",
+    "en": "Create Agent"
+  },
+  {
+    "path": "nav.explore",
+    "zh": "探索",
+    "en": "Explore"
+  },
+  {
+    "path": "home.greeting",
+    "zh": "欢迎回来，哈特同志。",
+    "en": "Welcome back, Comrade Hart."
+  },
+  {
+    "path": "home.dossier01",
+    "zh": "档案 01",
+    "en": "Dossier 01"
+  },
+  {
+    "path": "home.dossier02",
+    "zh": "档案 02",
+    "en": "Dossier 02"
+  },
+  {
+    "path": "home.dossierWord",
+    "zh": "档案",
+    "en": "Dossier"
+  },
+  {
+    "path": "home.currentMode",
+    "zh": "当前模式",
+    "en": "Current Mode"
+  },
+  {
+    "path": "home.continueStory",
+    "zh": "继续剧情",
+    "en": "Continue Story"
+  },
+  {
+    "path": "home.chatAgent",
+    "zh": "与 Agent 聊天",
+    "en": "Chat with Agent"
+  },
+  {
+    "path": "home.storyCardDesc",
+    "zh": "继续序章：暮光之线。",
+    "en": "Resume the Prologue: Threads of Dusk."
+  },
+  {
+    "path": "home.chatCardDesc",
+    "zh": "向你的联络人寻求指引。",
+    "en": "Consult with your handler for guidance."
+  },
+  {
+    "path": "home.recentActivity",
+    "zh": "最近活动",
+    "en": "Recent Activity"
+  },
+  {
+    "path": "home.emptyActivity",
+    "zh": "暂无最近活动。",
+    "en": "No recent activity."
+  },
+  {
+    "path": "home.ministryFooter",
+    "zh": "真理部",
+    "en": "Ministry of Truth"
+  },
+  {
+    "path": "modeSelect.dossierLabel",
+    "zh": "档案 · DOSSIER",
+    "en": "Profile · Dossier"
+  },
+  {
+    "path": "modeSelect.title",
+    "zh": "选择模式",
+    "en": "Choose Mode"
+  },
+  {
+    "path": "modeSelect.classification",
+    "zh": "密级",
+    "en": "Classification"
+  },
+  {
+    "path": "modeSelect.topSecret",
+    "zh": "绝密",
+    "en": "Top Secret"
+  },
+  {
+    "path": "modeSelect.level",
+    "zh": "等级",
+    "en": "Level"
+  },
+  {
+    "path": "modeSelect.omega",
+    "zh": "欧米茄",
+    "en": "Omega"
+  },
+  {
+    "path": "modeSelect.clearance",
+    "zh": "许可",
+    "en": "Clearance"
+  },
+  {
+    "path": "modeSelect.red7",
+    "zh": "红-7",
+    "en": "Red-7"
+  },
+  {
+    "path": "modeSelect.levelRed",
+    "zh": "红色等级",
+    "en": "Level Red"
+  },
+  {
+    "path": "modeSelect.dossierNumber",
+    "zh": "档案编号 G-03-A",
+    "en": "Dossier # G-03-A"
+  },
+  {
+    "path": "modeSelect.issued",
+    "zh": "签发",
+    "en": "Issued"
+  },
+  {
+    "path": "modeSelect.revised",
+    "zh": "修订",
+    "en": "Revised"
+  },
+  {
+    "path": "modeSelect.officer",
+    "zh": "官员",
+    "en": "Officer"
+  },
+  {
+    "path": "modeSelect.issuedDate",
+    "zh": "12.06.1987",
+    "en": "12.06.1987"
+  },
+  {
+    "path": "modeSelect.revisedDate",
+    "zh": "21.12.1987",
+    "en": "21.12.1987"
+  },
+  {
+    "path": "modeSelect.officerId",
+    "zh": "B-7",
+    "en": "B-7"
+  },
+  {
+    "path": "modeSelect.storyMode",
+    "zh": "剧情模式",
+    "en": "Story Mode"
+  },
+  {
+    "path": "modeSelect.freeChatMode",
+    "zh": "自由聊天",
+    "en": "Free Chat"
+  },
+  {
+    "path": "modeSelect.file001",
+    "zh": "编号 001",
+    "en": "No. 001"
+  },
+  {
+    "path": "modeSelect.file002",
+    "zh": "编号 002",
+    "en": "No. 002"
+  },
+  {
+    "path": "modeSelect.fileStatus",
+    "zh": "档案状态",
+    "en": "File Status"
+  },
+  {
+    "path": "modeSelect.statusConfirmed",
+    "zh": "已确认",
+    "en": "Confirmed"
+  },
+  {
+    "path": "modeSelect.statusStandby",
+    "zh": "待命",
+    "en": "Standby"
+  },
+  {
+    "path": "modeSelect.storyDesc",
+    "zh": "体验一段设定在苏联境内的精选叙事。",
+    "en": "Experience a curated narrative set within the Soviet Union."
+  },
+  {
+    "path": "modeSelect.freeChatDesc",
+    "zh": "自由对话，主题由你定义。",
+    "en": "Engage in open dialogue. The subject is yours to define."
+  },
+  {
+    "path": "storyHome.title",
+    "zh": "剧情章节",
+    "en": "Story Chapters"
+  },
+  {
+    "path": "storyHome.prologue",
+    "zh": "序章",
+    "en": "Prologue"
+  },
+  {
+    "path": "storyHome.chapter1",
+    "zh": "第一章",
+    "en": "Chapter 1"
+  },
+  {
+    "path": "storyHome.points",
+    "zh": "积分",
+    "en": "Points"
+  },
+  {
+    "path": "storyHome.vipOk",
+    "zh": "已开通",
+    "en": "Active"
+  },
+  {
+    "path": "storyHome.vipNo",
+    "zh": "未开通",
+    "en": "None"
+  },
+  {
+    "path": "storyHome.viewVip",
+    "zh": "查看 VIP",
+    "en": "View VIP"
+  },
+  {
+    "path": "storyHome.gallery",
+    "zh": "奖励图鉴",
+    "en": "Reward Gallery"
+  },
+  {
+    "path": "storyHome.galleryEmpty",
+    "zh": "暂无收集图鉴",
+    "en": "No gallery items yet"
+  },
+  {
+    "path": "storyHome.cleared",
+    "zh": "已通关",
+    "en": "Cleared"
+  },
+  {
+    "path": "storyHome.locked",
+    "zh": "未解锁",
+    "en": "Locked"
+  },
+  {
+    "path": "storyHome.playable",
+    "zh": "可进入",
+    "en": "Play"
+  },
+  {
+    "path": "storyHome.lockedDesc",
+    "zh": "请先完成前置场景或解锁章节",
+    "en": "Complete prior scenes or unlock the chapter first"
+  },
+  {
+    "path": "storyHome.chapterClear",
+    "zh": "章已通关",
+    "en": "Chapter clear"
+  },
+  {
+    "path": "storyHome.unlock",
+    "zh": "解锁",
+    "en": "Unlock"
+  },
+  {
+    "path": "storyHome.unlockTitle",
+    "zh": "积分解锁",
+    "en": "Unlock with points"
+  },
+  {
+    "path": "storyHome.unlockConfirm",
+    "zh": "消耗 {cost} 积分解锁「{title}」？",
+    "en": "Spend {cost} points to unlock \"{title}\"?"
+  },
+  {
+    "path": "storyHome.unlockPoints",
+    "zh": "消耗 {cost} 积分解锁",
+    "en": "Unlock for {cost} points"
+  },
+  {
+    "path": "storyHome.unlocked",
+    "zh": "已解锁",
+    "en": "Unlocked"
+  },
+  {
+    "path": "storyHome.unlockedDesc",
+    "zh": "章节已解锁，可以进入场景",
+    "en": "Chapter unlocked — scenes are now available"
+  },
+  {
+    "path": "storyHome.insufficientPoints",
+    "zh": "积分不足",
+    "en": "Insufficient points"
+  },
+  {
+    "path": "storyHome.insufficientPointsDesc",
+    "zh": "需要 {need} 积分，当前 {have}",
+    "en": "Need {need} points, you have {have}"
+  },
+  {
+    "path": "storyHome.prologueIntro",
+    "zh": "序章引言",
+    "en": "Prologue intro"
+  },
+  {
+    "path": "storyHome.parallel",
+    "zh": "平行蒙太奇",
+    "en": "Parallel montage"
+  },
+  {
+    "path": "storyHome.parallelDesc",
+    "zh": "Cutscene 占位：观看完毕后标记 parallel_seen",
+    "en": "Cutscene placeholder — mark as seen when finished"
+  },
+  {
+    "path": "storyHome.parallelComplete",
+    "zh": "观看完毕",
+    "en": "Mark complete"
+  },
+  {
+    "path": "storyHome.parallelDone",
+    "zh": "平行场完成",
+    "en": "Parallel complete"
+  },
+  {
+    "path": "storyHome.parallelMarked",
+    "zh": "已标记观看",
+    "en": "Marked as seen"
+  },
+  {
+    "path": "storyHome.nextScene",
+    "zh": "下一关：{code}",
+    "en": "Next: {code}"
+  },
+  {
+    "path": "storyHome.matureVip",
+    "zh": "需要 Mature VIP",
+    "en": "Mature VIP required"
+  },
+  {
+    "path": "storyHome.matureVipDesc",
+    "zh": "查看 Mature 图鉴需要 VIP mature_mode 权限",
+    "en": "Viewing Mature gallery requires VIP mature_mode"
+  },
+  {
+    "path": "storyHome.debugReset",
+    "zh": "清除章节进度（调试）",
+    "en": "Clear chapter progress (debug)"
+  },
+  {
+    "path": "storyHome.debugResetTitle",
+    "zh": "清除进度",
+    "en": "Clear progress"
+  },
+  {
+    "path": "storyHome.debugResetConfirm",
+    "zh": "将清除「{title}」的通关记录、场景 flag 与进行中的会话。积分解锁不受影响。",
+    "en": "Clears clear state, scene flags, and active sessions for \"{title}\". Point unlocks are kept."
+  },
+  {
+    "path": "storyHome.debugResetDone",
+    "zh": "章节进度已清除",
+    "en": "Chapter progress cleared"
+  },
+  {
+    "path": "storyHome.loadFailed",
+    "zh": "加载失败",
+    "en": "Failed to load"
+  },
+  {
+    "path": "storyHome.unlockFailed",
+    "zh": "解锁失败",
+    "en": "Unlock failed"
+  },
+  {
+    "path": "storyHome.resetFailed",
+    "zh": "重置失败",
+    "en": "Reset failed"
+  },
+  {
+    "path": "storyHome.enterFailed",
+    "zh": "进入场景失败",
+    "en": "Failed to enter scene"
+  },
+  {
+    "path": "profile.title",
+    "zh": "个人中心",
+    "en": "Profile"
+  },
+  {
+    "path": "profile.stats",
+    "zh": "数据",
+    "en": "Stats"
+  },
+  {
+    "path": "profile.achievements",
+    "zh": "成就",
+    "en": "Achievements"
+  },
+  {
+    "path": "profile.placeholderUser",
+    "zh": "玩家",
+    "en": "Player"
+  },
+  {
+    "path": "profile.vip",
+    "zh": "VIP",
+    "en": "VIP"
+  },
+  {
+    "path": "profile.member",
+    "zh": "会员",
+    "en": "Member"
+  },
+  {
+    "path": "profile.points",
+    "zh": "剧情积分",
+    "en": "Story Points"
+  },
+  {
+    "path": "profile.pointsHint",
+    "zh": "用于剧情解锁与道具",
+    "en": "For story unlocks & items"
+  },
+  {
+    "path": "profile.chatQuota",
+    "zh": "对话次数",
+    "en": "Chat Quota"
+  },
+  {
+    "path": "profile.chatQuotaUnlimited",
+    "zh": "无限",
+    "en": "Unlimited"
+  },
+  {
+    "path": "profile.chatQuotaToday",
+    "zh": "今日剩余",
+    "en": "Left today"
+  },
+  {
+    "path": "profile.pointsValue",
+    "zh": "1250",
+    "en": "1250"
+  },
+  {
+    "path": "profile.sceneLabel",
+    "zh": "场景",
+    "en": "Scene"
+  },
+  {
+    "path": "freeChat.title",
+    "zh": "Agent 列表",
+    "en": "Agents"
+  },
+  {
+    "path": "freeChat.tabAgents",
+    "zh": "Agent",
+    "en": "Agents"
+  },
+  {
+    "path": "freeChat.tabWorldviews",
+    "zh": "世界观",
+    "en": "Worldviews"
+  },
+  {
+    "path": "freeChat.worldviewLabel",
+    "zh": "世界观",
+    "en": "Worldview"
+  },
+  {
+    "path": "freeChat.worldviewBackground",
+    "zh": "背景设定",
+    "en": "Background"
+  },
+  {
+    "path": "freeChat.emptyWorldviews",
+    "zh": "暂无世界观",
+    "en": "No worldviews yet"
+  },
+  {
+    "path": "freeChat.worldviewRoleCount",
+    "zh": "含 {count} 个官方角色",
+    "en": "{count} official characters"
+  },
+  {
+    "path": "freeChat.worldviewRoleCountShort",
+    "zh": "{count} 角色",
+    "en": "{count} roles"
+  },
+  {
+    "path": "freeChat.worldviewOverview",
+    "zh": "背景设定",
+    "en": "Overview"
+  },
+  {
+    "path": "freeChat.worldviewEncyclopedia",
+    "zh": "世界观百科",
+    "en": "World Encyclopedia"
+  },
+  {
+    "path": "freeChat.worldviewNoContent",
+    "zh": "暂无条目",
+    "en": "No entries yet"
+  },
+  {
+    "path": "freeChat.emptyAgents",
+    "zh": "暂无 Agent，去创建或探索一个。",
+    "en": "No agents yet. Create or explore one."
+  },
+  {
+    "path": "freeChat.searchPlaceholder",
+    "zh": "搜索 Agent…",
+    "en": "Search agents…"
+  },
+  {
+    "path": "freeChat.allCategories",
+    "zh": "全部",
+    "en": "All"
+  },
+  {
+    "path": "freeChat.noFilterResults",
+    "zh": "没有匹配的 Agent",
+    "en": "No matching agents"
+  },
+  {
+    "path": "freeChat.lastMessage",
+    "zh": "上次对话",
+    "en": "Last chat"
+  },
+  {
+    "path": "freeChat.loading",
+    "zh": "加载中…",
+    "en": "Loading…"
+  },
+  {
+    "path": "freeChat.error",
+    "zh": "加载失败",
+    "en": "Failed to load"
+  },
+  {
+    "path": "freeChat.retry",
+    "zh": "重试",
+    "en": "Retry"
+  },
+  {
+    "path": "freeChat.startChat",
+    "zh": "开始对话",
+    "en": "Start Chat"
+  },
+  {
+    "path": "createAgent.title",
+    "zh": "创建 Agent",
+    "en": "Create Agent"
+  },
+  {
+    "path": "createAgent.name",
+    "zh": "名称",
+    "en": "Name"
+  },
+  {
+    "path": "createAgent.figure",
+    "zh": "角色立绘（9:16）",
+    "en": "Character art (9:16)"
+  },
+  {
+    "path": "createAgent.personality",
+    "zh": "性格标签",
+    "en": "Personality tags"
+  },
+  {
+    "path": "createAgent.personalityPlaceholder",
+    "zh": "输入后回车添加",
+    "en": "Type and press Enter"
+  },
+  {
+    "path": "createAgent.introduction",
+    "zh": "简介",
+    "en": "Introduction"
+  },
+  {
+    "path": "createAgent.appearance",
+    "zh": "外貌（选填）",
+    "en": "Appearance (optional)"
+  },
+  {
+    "path": "createAgent.sceneName",
+    "zh": "场景名（选填）",
+    "en": "Scene name (optional)"
+  },
+  {
+    "path": "createAgent.sceneDesc",
+    "zh": "场景描述（选填）",
+    "en": "Scene description (optional)"
+  },
+  {
+    "path": "createAgent.submit",
+    "zh": "创建",
+    "en": "Create"
+  },
+  {
+    "path": "createAgent.uploadHint",
+    "zh": "推荐 576×1024",
+    "en": "Recommended 576×1024"
+  },
+  {
+    "path": "createAgent.englishOnly",
+    "zh": "请使用英文填写内容",
+    "en": "Please write content in English"
+  },
+  {
+    "path": "createAgent.langSupport",
+    "zh": "选择 Agent 支持的语言，并在各语言标签下分别填写",
+    "en": "Choose supported languages and fill in each language tab"
+  },
+  {
+    "path": "createAgent.langEn",
+    "zh": "English（主语言）",
+    "en": "English (primary)"
+  },
+  {
+    "path": "createAgent.langZh",
+    "zh": "中文",
+    "en": "Chinese"
+  },
+  {
+    "path": "createAgent.langJp",
+    "zh": "日本語",
+    "en": "Japanese"
+  },
+  {
+    "path": "createAgent.langRu",
+    "zh": "俄语",
+    "en": "Russian"
+  },
+  {
+    "path": "createAgent.langEs",
+    "zh": "西班牙语",
+    "en": "Spanish"
+  },
+  {
+    "path": "createAgent.pickImage",
+    "zh": "选择图片",
+    "en": "Choose image"
+  },
+  {
+    "path": "createAgent.creating",
+    "zh": "创建中…",
+    "en": "Creating…"
+  },
+  {
+    "path": "createAgent.success",
+    "zh": "创建成功",
+    "en": "Agent created"
+  },
+  {
+    "path": "createAgent.advanced",
+    "zh": "高级选项",
+    "en": "Advanced"
+  },
+  {
+    "path": "createAgent.introCount",
+    "zh": "{count}/500（至少 10 字）",
+    "en": "{count}/500 (min 10)"
+  },
+  {
+    "path": "createAgent.wizard.heading",
+    "zh": "开始创建你的 Agent",
+    "en": "Your Agent Starts Here"
+  },
+  {
+    "path": "createAgent.wizard.subtitle",
+    "zh": "分步选择风格与外貌，填写性格与立绘，创建专属 Agent。",
+    "en": "Pick style and looks, define personality, then upload character art."
+  },
+  {
+    "path": "createAgent.wizard.stepStyle",
+    "zh": "风格",
+    "en": "Style"
+  },
+  {
+    "path": "createAgent.wizard.stepBasics",
+    "zh": "基础",
+    "en": "Basics"
+  },
+  {
+    "path": "createAgent.wizard.stepPersonality",
+    "zh": "性格",
+    "en": "Personality"
+  },
+  {
+    "path": "createAgent.wizard.stepImage",
+    "zh": "立绘",
+    "en": "Image"
+  },
+  {
+    "path": "createAgent.wizard.back",
+    "zh": "← 上一步",
+    "en": "← Back"
+  },
+  {
+    "path": "createAgent.wizard.next",
+    "zh": "下一步 →",
+    "en": "Next →"
+  },
+  {
+    "path": "createAgent.wizard.genderSection",
+    "zh": "性别",
+    "en": "Gender"
+  },
+  {
+    "path": "createAgent.wizard.genderFemale",
+    "zh": "女性",
+    "en": "Female"
+  },
+  {
+    "path": "createAgent.wizard.genderMale",
+    "zh": "男性",
+    "en": "Male"
+  },
+  {
+    "path": "createAgent.wizard.genderNeutral",
+    "zh": "中性",
+    "en": "Neutral"
+  },
+  {
+    "path": "createAgent.wizard.artSection",
+    "zh": "画风",
+    "en": "Art style"
+  },
+  {
+    "path": "createAgent.wizard.artRealistic",
+    "zh": "写实",
+    "en": "Realistic"
+  },
+  {
+    "path": "createAgent.wizard.artAnime",
+    "zh": "动漫",
+    "en": "Anime"
+  },
+  {
+    "path": "createAgent.wizard.ethnicitySection",
+    "zh": "族裔",
+    "en": "Ethnicity"
+  },
+  {
+    "path": "createAgent.wizard.ethnicityAsian",
+    "zh": "亚裔",
+    "en": "Asian"
+  },
+  {
+    "path": "createAgent.wizard.ethnicityWhite",
+    "zh": "欧美",
+    "en": "White"
+  },
+  {
+    "path": "createAgent.wizard.ethnicityBlack",
+    "zh": "非裔",
+    "en": "Black"
+  },
+  {
+    "path": "createAgent.wizard.ethnicityLatina",
+    "zh": "拉丁",
+    "en": "Latina"
+  },
+  {
+    "path": "createAgent.wizard.ethnicityMiddleEastern",
+    "zh": "中东",
+    "en": "Middle Eastern"
+  },
+  {
+    "path": "createAgent.wizard.ethnicityFantasy",
+    "zh": "幻想",
+    "en": "Fantasy"
+  },
+  {
+    "path": "createAgent.wizard.hairSection",
+    "zh": "发型",
+    "en": "Hair style"
+  },
+  {
+    "path": "createAgent.wizard.hairLong",
+    "zh": "长发",
+    "en": "Long"
+  },
+  {
+    "path": "createAgent.wizard.hairShort",
+    "zh": "短发",
+    "en": "Short"
+  },
+  {
+    "path": "createAgent.wizard.hairWavy",
+    "zh": "波浪",
+    "en": "Wavy"
+  },
+  {
+    "path": "createAgent.wizard.hairBraided",
+    "zh": "编发",
+    "en": "Braided"
+  },
+  {
+    "path": "createAgent.wizard.hairPonytail",
+    "zh": "马尾",
+    "en": "Ponytail"
+  },
+  {
+    "path": "createAgent.wizard.hairBun",
+    "zh": "发髻",
+    "en": "Bun"
+  },
+  {
+    "path": "createAgent.wizard.bodySection",
+    "zh": "体型",
+    "en": "Body type"
+  },
+  {
+    "path": "createAgent.wizard.bodySlim",
+    "zh": "纤细",
+    "en": "Slim"
+  },
+  {
+    "path": "createAgent.wizard.bodyAthletic",
+    "zh": "运动",
+    "en": "Athletic"
+  },
+  {
+    "path": "createAgent.wizard.bodyCurvy",
+    "zh": "曲线",
+    "en": "Curvy"
+  },
+  {
+    "path": "createAgent.wizard.bodyMuscular",
+    "zh": "健美",
+    "en": "Muscular"
+  },
+  {
+    "path": "createAgent.wizard.bodyAverage",
+    "zh": "匀称",
+    "en": "Average"
+  },
+  {
+    "path": "createAgent.wizard.presetsSection",
+    "zh": "性格预设",
+    "en": "Personality presets"
+  },
+  {
+    "path": "createAgent.wizard.presetCalm",
+    "zh": "冷静",
+    "en": "Calm"
+  },
+  {
+    "path": "createAgent.wizard.presetWitty",
+    "zh": "机智",
+    "en": "Witty"
+  },
+  {
+    "path": "createAgent.wizard.presetRomantic",
+    "zh": "浪漫",
+    "en": "Romantic"
+  },
+  {
+    "path": "createAgent.wizard.presetMysterious",
+    "zh": "神秘",
+    "en": "Mysterious"
+  },
+  {
+    "path": "createAgent.wizard.presetPlayful",
+    "zh": "活泼",
+    "en": "Playful"
+  },
+  {
+    "path": "createAgent.wizard.presetStoic",
+    "zh": "沉稳",
+    "en": "Stoic"
+  },
+  {
+    "path": "createAgent.wizard.presetCaring",
+    "zh": "温柔",
+    "en": "Caring"
+  },
+  {
+    "path": "createAgent.wizard.presetBold",
+    "zh": "大胆",
+    "en": "Bold"
+  },
+  {
+    "path": "createAgent.wizard.imageHint",
+    "zh": "上传 9:16 立绘，创建完成后即可在 Free Chat 中使用。",
+    "en": "Upload 9:16 character art to finish creating your agent."
+  },
+  {
+    "path": "createAgent.wizard.previewTitle",
+    "zh": "预览",
+    "en": "Preview"
+  },
+  {
+    "path": "createAgent.wizard.previewUntitled",
+    "zh": "未命名 Agent",
+    "en": "Untitled Agent"
+  },
+  {
+    "path": "createAgent.wizard.previewNoImage",
+    "zh": "尚未上传立绘",
+    "en": "No image yet"
+  },
+  {
+    "path": "createAgent.wizard.previewNoTags",
+    "zh": "尚未添加性格标签",
+    "en": "No personality tags yet"
+  },
+  {
+    "path": "createAgent.wizard.errorStyle",
+    "zh": "请选择性别与画风",
+    "en": "Select gender and art style"
+  },
+  {
+    "path": "createAgent.wizard.errorBasics",
+    "zh": "请完成族裔、发型与体型选择",
+    "en": "Complete ethnicity, hair, and body type"
+  },
+  {
+    "path": "explore.title",
+    "zh": "探索",
+    "en": "Explore"
+  },
+  {
+    "path": "explore.forYou",
+    "zh": "为你推荐",
+    "en": "For you"
+  },
+  {
+    "path": "explore.allCategories",
+    "zh": "全部",
+    "en": "All"
+  },
+  {
+    "path": "explore.searchPlaceholder",
+    "zh": "搜索 Agent…",
+    "en": "Search agents…"
+  },
+  {
+    "path": "explore.empty",
+    "zh": "暂无公开 Agent",
+    "en": "No public agents yet"
+  },
+  {
+    "path": "explore.loading",
+    "zh": "加载中…",
+    "en": "Loading…"
+  },
+  {
+    "path": "explore.back",
+    "zh": "返回",
+    "en": "Back"
+  },
+  {
+    "path": "explore.views",
+    "zh": "{n} 浏览",
+    "en": "{n} views"
+  },
+  {
+    "path": "explore.comments",
+    "zh": "{n} 评论",
+    "en": "{n} comments"
+  },
+  {
+    "path": "explore.commentSection",
+    "zh": "评论",
+    "en": "Comments"
+  },
+  {
+    "path": "explore.commentPlaceholder",
+    "zh": "写下你的想法…",
+    "en": "Write a comment…"
+  },
+  {
+    "path": "explore.postComment",
+    "zh": "发送",
+    "en": "Post"
+  },
+  {
+    "path": "explore.deleteComment",
+    "zh": "删除",
+    "en": "Delete"
+  },
+  {
+    "path": "explore.noComments",
+    "zh": "暂无评论",
+    "en": "No comments yet"
+  },
+  {
+    "path": "events.title",
+    "zh": "互动 Event",
+    "en": "Interaction Events"
+  },
+  {
+    "path": "events.hint",
+    "zh": "最多 6 个自定义互动按钮（英文）。welcome 为系统事件不可编辑。",
+    "en": "Up to 6 custom interaction buttons (English). Welcome is system-managed."
+  },
+  {
+    "path": "events.item",
+    "zh": "Event {n}",
+    "en": "Event {n}"
+  },
+  {
+    "path": "events.eventName",
+    "zh": "事件 ID（小写英文）",
+    "en": "Event ID (lowercase)"
+  },
+  {
+    "path": "events.displayName",
+    "zh": "按钮文案",
+    "en": "Button label"
+  },
+  {
+    "path": "events.promptSuffix",
+    "zh": "触发后追加 Prompt",
+    "en": "Prompt suffix on trigger"
+  },
+  {
+    "path": "events.active",
+    "zh": "启用",
+    "en": "Active"
+  },
+  {
+    "path": "events.add",
+    "zh": "+ 添加 Event",
+    "en": "+ Add Event"
+  },
+  {
+    "path": "events.remove",
+    "zh": "删除",
+    "en": "Remove"
+  },
+  {
+    "path": "events.save",
+    "zh": "保存 Event",
+    "en": "Save Events"
+  },
+  {
+    "path": "events.invalidName",
+    "zh": "Event ID 须为小写英文+下划线",
+    "en": "Event ID must be lowercase letters, digits, underscore"
+  },
+  {
+    "path": "events.duplicateName",
+    "zh": "Event ID 不能重复",
+    "en": "Duplicate event ID"
+  },
+  {
+    "path": "events.invalidFields",
+    "zh": "请填写按钮文案与 Prompt（各不超过限制）",
+    "en": "Fill label and prompt within length limits"
+  },
+  {
+    "path": "agent.settings",
+    "zh": "Agent 设置",
+    "en": "Agent Settings"
+  },
+  {
+    "path": "agent.save",
+    "zh": "保存修改",
+    "en": "Save changes"
+  },
+  {
+    "path": "agent.publish",
+    "zh": "发布到 Explore",
+    "en": "Publish to Explore"
+  },
+  {
+    "path": "agent.unpublish",
+    "zh": "取消公开",
+    "en": "Unpublish"
+  },
+  {
+    "path": "agent.delete",
+    "zh": "删除 Agent",
+    "en": "Delete Agent"
+  },
+  {
+    "path": "agent.deleteConfirm",
+    "zh": "确定删除该 Agent？历史聊天记录将保留为只读。",
+    "en": "Delete this agent? Chat history will remain read-only."
+  },
+  {
+    "path": "agent.publishPending",
+    "zh": "审核中",
+    "en": "Under review"
+  },
+  {
+    "path": "agent.publishRejected",
+    "zh": "未通过审核",
+    "en": "Rejected"
+  },
+  {
+    "path": "agent.statusPrivate",
+    "zh": "私有",
+    "en": "Private"
+  },
+  {
+    "path": "agent.statusPublished",
+    "zh": "已公开",
+    "en": "Published"
+  },
+  {
+    "path": "agent.versions",
+    "zh": "版本历史",
+    "en": "Version history"
+  },
+  {
+    "path": "agent.restoreVersion",
+    "zh": "恢复此版本",
+    "en": "Restore"
+  },
+  {
+    "path": "agent.restoreConfirm",
+    "zh": "恢复至版本 {version}？将生成新版本。",
+    "en": "Restore version {version}? This creates a new version."
+  },
+  {
+    "path": "agent.noVersions",
+    "zh": "暂无版本记录",
+    "en": "No versions yet"
+  },
+  {
+    "path": "agent.pendingEditHint",
+    "zh": "审核中无法编辑，请等待审核结果。",
+    "en": "Cannot edit while under review."
+  },
+  {
+    "path": "agent.notOwner",
+    "zh": "无权管理该 Agent",
+    "en": "You cannot manage this agent"
+  },
+  {
+    "path": "agent.manage",
+    "zh": "管理",
+    "en": "Manage"
+  },
+  {
+    "path": "agent.supportedLangs",
+    "zh": "支持语言",
+    "en": "Languages"
+  },
+  {
+    "path": "agent.detailTitle",
+    "zh": "AGENT 详情",
+    "en": "AGENT DETAIL"
+  },
+  {
+    "path": "agent.characterBio",
+    "zh": "角色简介",
+    "en": "Character Bio"
+  },
+  {
+    "path": "agent.affiliatedFaction",
+    "zh": "所属阵营",
+    "en": "Affiliated Faction"
+  },
+  {
+    "path": "agent.relatedOperations",
+    "zh": "关联行动",
+    "en": "Related Operations"
+  },
+  {
+    "path": "agent.sendMessage",
+    "zh": "发送消息",
+    "en": "Send Message"
+  },
+  {
+    "path": "errors.unknown",
+    "zh": "操作失败，请重试",
+    "en": "Something went wrong. Please try again."
+  },
+  {
+    "path": "errors.roleRateLimited",
+    "zh": "创建数量已达上限",
+    "en": "Too many agents created"
+  },
+  {
+    "path": "errors.roleForbidden",
+    "zh": "无权访问该 Agent",
+    "en": "You do not have access to this agent"
+  },
+  {
+    "path": "errors.rolePendingReview",
+    "zh": "审核中，暂不可编辑",
+    "en": "Agent is under review"
+  },
+  {
+    "path": "errors.roleInvalidPublish",
+    "zh": "当前状态无法发布",
+    "en": "Cannot publish in current state"
+  },
+  {
+    "path": "errors.roleEnglishOnly",
+    "zh": "请使用英文填写内容",
+    "en": "Content must be written in English"
+  },
+  {
+    "path": "errors.roleInvalidParams",
+    "zh": "参数无效",
+    "en": "Invalid agent parameters"
+  },
+  {
+    "path": "errors.roleRevisionNotFound",
+    "zh": "版本不存在",
+    "en": "Revision not found"
+  },
+  {
+    "path": "errors.roleModerationFailed",
+    "zh": "内容未通过自动审核",
+    "en": "Content failed automated moderation"
+  },
+  {
+    "path": "errors.roleInvalidAsset",
+    "zh": "图片不符合要求：立绘须为 9:16（推荐 576×1024），支持 JPEG/PNG/WebP",
+    "en": "Image invalid: figure must be 9:16 (576×1024 recommended), JPEG/PNG/WebP only"
+  },
+  {
+    "path": "errors.roleTooLarge",
+    "zh": "图片文件过大",
+    "en": "Image file is too large"
+  },
+  {
+    "path": "errors.vipCreateAgent",
+    "zh": "需要 VIP 才能创建 Agent",
+    "en": "VIP required to create agents"
+  },
+  {
+    "path": "errors.introTooShort",
+    "zh": "简介至少 10 个字符",
+    "en": "Introduction must be at least 10 characters"
+  },
+  {
+    "path": "errors.introTooLong",
+    "zh": "简介不能超过 500 个字符",
+    "en": "Introduction must be at most 500 characters"
+  },
+  {
+    "path": "errors.figureRequired",
+    "zh": "请上传角色立绘",
+    "en": "Character art is required"
+  },
+  {
+    "path": "errors.nameRequired",
+    "zh": "请填写名称",
+    "en": "Name is required"
+  },
+  {
+    "path": "errors.personalityRequired",
+    "zh": "请至少添加一个性格标签",
+    "en": "Add at least one personality tag"
+  },
+  {
+    "path": "vip.shop.title",
+    "zh": "VIP 商店",
+    "en": "VIP Shop"
+  },
+  {
+    "path": "vip.shop.packageTitle",
+    "zh": "VIP 套餐",
+    "en": "VIP PACKAGE"
+  },
+  {
+    "path": "vip.shop.packageSubtitle",
+    "zh": "选择适合您的作战方案",
+    "en": "Choose the combat plan that suits you"
+  },
+  {
+    "path": "vip.shop.limitedOffer",
+    "zh": "限时特惠",
+    "en": "Limited Offer"
+  },
+  {
+    "path": "vip.shop.limitedOfferSub",
+    "zh": "精英特权，立即解锁",
+    "en": "Elite privileges — unlock now"
+  },
+  {
+    "path": "vip.shop.currentPlan",
+    "zh": "当前方案",
+    "en": "Current plan"
+  },
+  {
+    "path": "vip.shop.freePlan",
+    "zh": "免费版",
+    "en": "Free"
+  },
+  {
+    "path": "vip.shop.expires",
+    "zh": "到期",
+    "en": "Expires"
+  },
+  {
+    "path": "vip.shop.perMonth",
+    "zh": "每月",
+    "en": "per month"
+  },
+  {
+    "path": "vip.shop.perMonthShort",
+    "zh": "/ 月",
+    "en": "/ mo"
+  },
+  {
+    "path": "vip.shop.oneTime",
+    "zh": "一次性",
+    "en": "one-time"
+  },
+  {
+    "path": "vip.shop.durationDays",
+    "zh": "{n} 天",
+    "en": "{n} days"
+  },
+  {
+    "path": "vip.shop.monthlyPlan",
+    "zh": "按月订阅",
+    "en": "Monthly"
+  },
+  {
+    "path": "vip.shop.yearlyPlan",
+    "zh": "按年订阅",
+    "en": "Yearly"
+  },
+  {
+    "path": "vip.shop.yearlyDiscountBadge",
+    "zh": "8折",
+    "en": "20% OFF"
+  },
+  {
+    "path": "vip.shop.total",
+    "zh": "总计",
+    "en": "total"
+  },
+  {
+    "path": "vip.shop.subscribeNow",
+    "zh": "立即订阅",
+    "en": "Subscribe Now"
+  },
+  {
+    "path": "vip.shop.countdownLabel",
+    "zh": "优惠倒计时",
+    "en": "Offer ends in"
+  },
+  {
+    "path": "vip.shop.countdownHour",
+    "zh": "时",
+    "en": "h"
+  },
+  {
+    "path": "vip.shop.countdownMin",
+    "zh": "分",
+    "en": "m"
+  },
+  {
+    "path": "vip.shop.countdownSec",
+    "zh": "秒",
+    "en": "s"
+  },
+  {
+    "path": "vip.shop.featureCol",
+    "zh": "功能与模型",
+    "en": "Features & Models"
+  },
+  {
+    "path": "vip.shop.newTag",
+    "zh": "新",
+    "en": "NEW"
+  },
+  {
+    "path": "vip.shop.altPayment",
+    "zh": "或使用",
+    "en": "Or pay with"
+  },
+  {
+    "path": "vip.shop.payStripe",
+    "zh": "Stripe 支付",
+    "en": "Pay with Stripe"
+  },
+  {
+    "path": "vip.shop.payPaypal",
+    "zh": "PayPal 支付",
+    "en": "Pay with PayPal"
+  },
+  {
+    "path": "vip.shop.back",
+    "zh": "返回",
+    "en": "Back"
+  },
+  {
+    "path": "vip.shop.openCheckoutFailed",
+    "zh": "无法打开支付页面",
+    "en": "Cannot open checkout page"
+  },
+  {
+    "path": "vip.shop.upgrade",
+    "zh": "升级 VIP",
+    "en": "Upgrade VIP"
+  },
+  {
+    "path": "vip.shop.storyLocked",
+    "zh": "剧情模式需要 VIP",
+    "en": "Story mode requires VIP"
+  },
+  {
+    "path": "vip.shop.createLocked",
+    "zh": "创建 Agent 需要 VIP 会员",
+    "en": "Creating agents requires VIP membership"
+  },
+  {
+    "path": "vip.shop.tier.basic",
+    "zh": "BASIC",
+    "en": "BASIC"
+  },
+  {
+    "path": "vip.shop.tier.premium",
+    "zh": "PREMIUM",
+    "en": "PREMIUM"
+  },
+  {
+    "path": "vip.shop.tier.ultimate",
+    "zh": "ULTIMATE",
+    "en": "ULTIMATE"
+  },
+  {
+    "path": "vip.shop.features.pm",
+    "zh": "永久记忆 (PM)",
+    "en": "Permanent Memory (PM)"
+  },
+  {
+    "path": "vip.shop.features.ov",
+    "zh": "超越模式 (OV)",
+    "en": "Overdrive Mode (OV)"
+  },
+  {
+    "path": "vip.shop.features.lu",
+    "zh": "光辉模式 (LU)",
+    "en": "Radiance Mode (LU)"
+  },
+  {
+    "path": "vip.shop.features.cq",
+    "zh": "征服者模式 (CQ)",
+    "en": "Conqueror Mode (CQ)"
+  },
+  {
+    "path": "vip.shop.features.sa",
+    "zh": "叙事模式 (SA)",
+    "en": "Narrative Mode (SA)"
+  },
+  {
+    "path": "vip.shop.features.p",
+    "zh": "热情模式 (P)",
+    "en": "Passion Mode (P)"
+  },
+  {
+    "path": "vip.shop.features.t",
+    "zh": "故事模式 (T)",
+    "en": "Story Mode (T)"
+  },
+  {
+    "path": "vip.shop.features.longMem",
+    "zh": "长记忆",
+    "en": "Long Memory"
+  },
+  {
+    "path": "vip.shop.features.s",
+    "zh": "标准模式 (S)",
+    "en": "Standard Mode (S)"
+  },
+  {
+    "path": "vip.success.title",
+    "zh": "支付成功",
+    "en": "Payment successful"
+  },
+  {
+    "path": "vip.success.body",
+    "zh": "会员权益已更新，感谢支持。",
+    "en": "Your membership has been updated. Thank you!"
+  },
+  {
+    "path": "vip.success.verifying",
+    "zh": "正在确认支付结果…",
+    "en": "Confirming payment…"
+  },
+  {
+    "path": "vip.success.verifyPending",
+    "zh": "支付确认稍有延迟，权益将在几分钟内生效。",
+    "en": "Payment confirmation is delayed. Benefits should appear shortly."
+  },
+  {
+    "path": "vip.success.toProfile",
+    "zh": "查看个人中心",
+    "en": "Go to profile"
+  },
+  {
+    "path": "vip.success.toHome",
+    "zh": "返回首页",
+    "en": "Back to home"
+  },
+  {
+    "path": "vip.cancel.title",
+    "zh": "支付已取消",
+    "en": "Payment cancelled"
+  },
+  {
+    "path": "vip.cancel.body",
+    "zh": "未扣款，可随时重新购买。",
+    "en": "No charge was made. You can try again anytime."
+  },
+  {
+    "path": "vip.cancel.retry",
+    "zh": "返回商店",
+    "en": "Back to shop"
+  },
+  {
+    "path": "vip.profile.free",
+    "zh": "免费",
+    "en": "Free"
+  },
+  {
+    "path": "vip.profile.active",
+    "zh": "生效中",
+    "en": "Active"
+  },
+  {
+    "path": "vip.profile.tapToUpgrade",
+    "zh": "点击查看方案",
+    "en": "Tap to view plans"
+  },
+  {
+    "path": "referral.title",
+    "zh": "邀请好友",
+    "en": "Invite Friends"
+  },
+  {
+    "path": "referral.subtitle",
+    "zh": "分享邀请码，好友注册后双方获得积分",
+    "en": "Share your code — both of you earn points when friends sign up"
+  },
+  {
+    "path": "referral.activityEnded",
+    "zh": "活动已结束",
+    "en": "This event has ended"
+  },
+  {
+    "path": "referral.yourCode",
+    "zh": "我的邀请码",
+    "en": "My invite code"
+  },
+  {
+    "path": "referral.shareLink",
+    "zh": "分享链接",
+    "en": "Share link"
+  },
+  {
+    "path": "referral.copyCode",
+    "zh": "复制邀请码",
+    "en": "Copy code"
+  },
+  {
+    "path": "referral.copyLink",
+    "zh": "复制链接",
+    "en": "Copy link"
+  },
+  {
+    "path": "referral.share",
+    "zh": "分享",
+    "en": "Share"
+  },
+  {
+    "path": "referral.copied",
+    "zh": "复制成功",
+    "en": "Copied successfully"
+  },
+  {
+    "path": "referral.totalInvites",
+    "zh": "累计邀请",
+    "en": "Total invites"
+  },
+  {
+    "path": "referral.pointsEarned",
+    "zh": "邀请获得积分",
+    "en": "Points from invites"
+  },
+  {
+    "path": "referral.currentBalance",
+    "zh": "当前积分",
+    "en": "Current balance"
+  },
+  {
+    "path": "referral.rewardInvitee",
+    "zh": "好友注册得",
+    "en": "Friend gets"
+  },
+  {
+    "path": "referral.rewardInviter",
+    "zh": "你每邀 1 人得",
+    "en": "You get per invite"
+  },
+  {
+    "path": "referral.pointsUnit",
+    "zh": "积分",
+    "en": "pts"
+  },
+  {
+    "path": "referral.rulesTitle",
+    "zh": "活动说明",
+    "en": "How it works"
+  },
+  {
+    "path": "referral.rulePermanent",
+    "zh": "好友使用你的邀请码注册后，双方立即获得积分。",
+    "en": "When a friend registers with your code, both of you receive points immediately."
+  },
+  {
+    "path": "referral.ruleFirstAction",
+    "zh": "好友注册后首次发送聊天消息，双方获得积分。",
+    "en": "Points are granted after your friend sends their first chat message."
+  },
+  {
+    "path": "referral.ruleDuration",
+    "zh": "仅在活动期间注册的好友可获得奖励。",
+    "en": "Only sign-ups during the active period qualify for rewards."
+  },
+  {
+    "path": "referral.inviteList",
+    "zh": "邀请记录",
+    "en": "Invite history"
+  },
+  {
+    "path": "referral.emptyInvites",
+    "zh": "暂无邀请记录",
+    "en": "No invites yet"
+  },
+  {
+    "path": "referral.statusPending",
+    "zh": "待完成",
+    "en": "Pending"
+  },
+  {
+    "path": "referral.statusCompleted",
+    "zh": "已完成",
+    "en": "Completed"
+  },
+  {
+    "path": "referral.ledgerTitle",
+    "zh": "积分流水",
+    "en": "Points history"
+  },
+  {
+    "path": "referral.emptyLedger",
+    "zh": "暂无流水",
+    "en": "No transactions yet"
+  },
+  {
+    "path": "referral.tapPoints",
+    "zh": "点击查看邀请",
+    "en": "Tap to invite friends"
+  },
+  {
+    "path": "referral.loginBannerEnded",
+    "zh": "邀请活动已结束",
+    "en": "The invite event has ended"
+  },
+  {
+    "path": "referral.loginBannerValid",
+    "zh": "来自 {name} 的邀请 · 注册你得 {points} 积分",
+    "en": "Invited by {name} · You get {points} points on sign-up"
+  },
+  {
+    "path": "referral.inviteCode",
+    "zh": "邀请码（选填）",
+    "en": "Invite code (optional)"
+  },
+  {
+    "path": "referral.inviteCodePlaceholder",
+    "zh": "8 位邀请码",
+    "en": "8-character code"
+  },
+  {
+    "path": "referral.back",
+    "zh": "返回",
+    "en": "Back"
+  },
+  {
+    "path": "referral.loadFailed",
+    "zh": "加载失败",
+    "en": "Failed to load"
+  },
+  {
+    "path": "referral.retry",
+    "zh": "重试",
+    "en": "Retry"
+  },
+  {
+    "path": "referral.goShop",
+    "zh": "积分兑换",
+    "en": "Redeem points"
+  },
+  {
+    "path": "pointsShop.title",
+    "zh": "积分兑换",
+    "en": "Points Shop"
+  },
+  {
+    "path": "pointsShop.subtitle",
+    "zh": "剧情积分仅用于兑换道具或解锁章节，不可用于 Free Chat 对话",
+    "en": "Story points are for items and chapter unlocks only — not for Free Chat messages"
+  },
+  {
+    "path": "pointsShop.balance",
+    "zh": "当前积分",
+    "en": "Your balance"
+  },
+  {
+    "path": "pointsShop.redeem",
+    "zh": "兑换",
+    "en": "Redeem"
+  },
+  {
+    "path": "pointsShop.owned",
+    "zh": "已拥有",
+    "en": "Owned"
+  },
+  {
+    "path": "pointsShop.redeemed",
+    "zh": "兑换成功",
+    "en": "Redeemed successfully"
+  },
+  {
+    "path": "pointsShop.alreadyOwned",
+    "zh": "你已拥有该物品",
+    "en": "You already own this item"
+  },
+  {
+    "path": "pointsShop.insufficient",
+    "zh": "积分不足",
+    "en": "Not enough points"
+  },
+  {
+    "path": "pointsShop.empty",
+    "zh": "暂无可兑换项目",
+    "en": "No items available"
+  },
+  {
+    "path": "pointsShop.myUnlocks",
+    "zh": "我的兑换",
+    "en": "My redemptions"
+  },
+  {
+    "path": "pointsShop.back",
+    "zh": "返回",
+    "en": "Back"
+  },
+  {
+    "path": "pointsShop.categoryStoryItem",
+    "zh": "剧情道具",
+    "en": "Story items"
+  },
+  {
+    "path": "pointsShop.categoryStoryUnlock",
+    "zh": "剧情解锁",
+    "en": "Story unlocks"
+  },
+  {
+    "path": "pointsShop.categoryOther",
+    "zh": "其他",
+    "en": "Other"
+  },
+  {
+    "path": "pointsShop.inviteLink",
+    "zh": "邀请好友赚积分",
+    "en": "Invite friends to earn points"
+  },
+  {
+    "path": "login.title",
+    "zh": "登录",
+    "en": "Login"
+  },
+  {
+    "path": "login.subtitle",
+    "zh": "输入邮箱以开始",
+    "en": "Enter your email to continue"
+  },
+  {
+    "path": "login.email",
+    "zh": "邮箱",
+    "en": "Email"
+  },
+  {
+    "path": "login.emailPlaceholder",
+    "zh": "your@email.com",
+    "en": "your@email.com"
+  },
+  {
+    "path": "login.password",
+    "zh": "密码",
+    "en": "Password"
+  },
+  {
+    "path": "login.passwordPlaceholder",
+    "zh": "至少 8 位字符",
+    "en": "At least 8 characters"
+  },
+  {
+    "path": "login.confirmPassword",
+    "zh": "确认密码",
+    "en": "Confirm password"
+  },
+  {
+    "path": "login.newPassword",
+    "zh": "新密码",
+    "en": "New password"
+  },
+  {
+    "path": "login.code",
+    "zh": "验证码",
+    "en": "Verification code"
+  },
+  {
+    "path": "login.codePlaceholder",
+    "zh": "6 位验证码",
+    "en": "6-digit code"
+  },
+  {
+    "path": "login.sendCode",
+    "zh": "获取验证码",
+    "en": "Send code"
+  },
+  {
+    "path": "login.sending",
+    "zh": "发送中…",
+    "en": "Sending…"
+  },
+  {
+    "path": "login.resend",
+    "zh": "重新发送",
+    "en": "Resend"
+  },
+  {
+    "path": "login.login",
+    "zh": "登录",
+    "en": "Login"
+  },
+  {
+    "path": "login.loginRequired",
+    "zh": "请先登录后再进入剧情模式",
+    "en": "Please log in to play Story Mode"
+  },
+  {
+    "path": "login.loggingIn",
+    "zh": "登录中…",
+    "en": "Logging in…"
+  },
+  {
+    "path": "login.register",
+    "zh": "注册",
+    "en": "Register"
+  },
+  {
+    "path": "login.registering",
+    "zh": "注册中…",
+    "en": "Registering…"
+  },
+  {
+    "path": "login.resetPassword",
+    "zh": "重置密码",
+    "en": "Reset password"
+  },
+  {
+    "path": "login.backToLogin",
+    "zh": "返回登录",
+    "en": "Back to login"
+  },
+  {
+    "path": "login.resetting",
+    "zh": "重置中…",
+    "en": "Resetting…"
+  },
+  {
+    "path": "login.invalidEmail",
+    "zh": "邮箱格式不正确",
+    "en": "Invalid email"
+  },
+  {
+    "path": "login.codeSent",
+    "zh": "验证码已发送",
+    "en": "Code sent"
+  },
+  {
+    "path": "login.loginFailed",
+    "zh": "登录失败",
+    "en": "Login failed"
+  },
+  {
+    "path": "login.registerSuccess",
+    "zh": "注册成功",
+    "en": "Registered successfully"
+  },
+  {
+    "path": "login.resetSuccess",
+    "zh": "密码已重置，请登录",
+    "en": "Password reset, please log in"
+  },
+  {
+    "path": "login.passwordsMismatch",
+    "zh": "两次输入的密码不一致",
+    "en": "Passwords do not match"
+  },
+  {
+    "path": "login.passwordTooShort",
+    "zh": "密码至少 8 位",
+    "en": "Password must be at least 8 characters"
+  },
+  {
+    "path": "login.emailAlreadyRegistered",
+    "zh": "邮箱已被注册",
+    "en": "Email already registered"
+  },
+  {
+    "path": "login.userNotFound",
+    "zh": "用户不存在",
+    "en": "User not found"
+  },
+  {
+    "path": "login.passwordNotSet",
+    "zh": "请先重置密码",
+    "en": "Please reset your password first"
+  },
+  {
+    "path": "login.invalidPassword",
+    "zh": "密码错误",
+    "en": "Invalid password"
+  },
+  {
+    "path": "login.orContinueWith",
+    "zh": "或使用以下方式继续",
+    "en": "Or continue with"
+  },
+  {
+    "path": "announcement.confirm",
+    "zh": "确认",
+    "en": "Confirm"
+  },
+  {
+    "path": "announcement.dismissToday",
+    "zh": "今日内不再弹窗",
+    "en": "Don't show again today"
+  },
+  {
+    "path": "announcement.dismiss",
+    "zh": "关闭",
+    "en": "Dismiss"
+  },
+  {
+    "path": "chat.placeholder",
+    "zh": "输入消息…",
+    "en": "Type a message…"
+  },
+  {
+    "path": "chat.sending",
+    "zh": "发送中…",
+    "en": "Sending…"
+  },
+  {
+    "path": "chat.system",
+    "zh": "系统",
+    "en": "System"
+  },
+  {
+    "path": "chat.interrupted",
+    "zh": "已打断",
+    "en": "Interrupted"
+  },
+  {
+    "path": "chat.history",
+    "zh": "聊天历史",
+    "en": "Chat History"
+  },
+  {
+    "path": "chat.historyCount",
+    "zh": "共 {count} 条",
+    "en": "{count} messages"
+  },
+  {
+    "path": "chat.events",
+    "zh": "互动",
+    "en": "Interactions"
+  },
+  {
+    "path": "chat.info",
+    "zh": "角色信息",
+    "en": "Character Info"
+  },
+  {
+    "path": "chat.sceneDesc",
+    "zh": "场景描述",
+    "en": "Scene Description"
+  },
+  {
+    "path": "chat.attributes",
+    "zh": "属性",
+    "en": "Attributes"
+  },
+  {
+    "path": "chat.origin",
+    "zh": "出身",
+    "en": "Origin"
+  },
+  {
+    "path": "chat.background",
+    "zh": "背景",
+    "en": "Background"
+  },
+  {
+    "path": "chat.codename",
+    "zh": "代号",
+    "en": "Codename"
+  },
+  {
+    "path": "chat.appearance",
+    "zh": "外貌",
+    "en": "Appearance"
+  },
+  {
+    "path": "chat.personality",
+    "zh": "性格",
+    "en": "Personality"
+  },
+  {
+    "path": "chat.real_name",
+    "zh": "真名",
+    "en": "Real Name"
+  },
+  {
+    "path": "chat.current_year",
+    "zh": "年份",
+    "en": "Year"
+  },
+  {
+    "path": "chat.cover_identity",
+    "zh": "伪装身份",
+    "en": "Cover Identity"
+  },
+  {
+    "path": "chat.real_identity",
+    "zh": "真实身份",
+    "en": "Real Identity"
+  },
+  {
+    "path": "chat.interrupt",
+    "zh": "打断",
+    "en": "Interrupt"
+  },
+  {
+    "path": "chat.close",
+    "zh": "关闭",
+    "en": "Close"
+  },
+  {
+    "path": "chat.voiceTooShort",
+    "zh": "录音时间太短",
+    "en": "Recording too short"
+  },
+  {
+    "path": "chat.micPermissionRequired",
+    "zh": "需要麦克风权限",
+    "en": "Microphone permission required"
+  },
+  {
+    "path": "chat.micUnavailable",
+    "zh": "无法访问麦克风",
+    "en": "Cannot access microphone"
+  },
+  {
+    "path": "chat.asrFailed",
+    "zh": "语音识别失败",
+    "en": "Voice recognition failed"
+  },
+  {
+    "path": "chat.recording",
+    "zh": "录音中…",
+    "en": "Recording…"
+  },
+  {
+    "path": "chat.recognizing",
+    "zh": "识别中…",
+    "en": "Recognizing…"
+  },
+  {
+    "path": "chat.stillResponding",
+    "zh": "请等待上一条回复完成",
+    "en": "Please wait for the current reply to finish"
+  },
+  {
+    "path": "chat.quotaRemaining",
+    "zh": "今日剩余 {count} 次对话",
+    "en": "{count} messages left today"
+  },
+  {
+    "path": "chat.quotaExceededTitle",
+    "zh": "对话次数已用完",
+    "en": "Out of chat messages"
+  },
+  {
+    "path": "chat.quotaExceededMessage",
+    "zh": "今日或本周期对话配额已用完。升级 VIP 可获得更多或无限对话。",
+    "en": "Your chat quota for this period is used up. Upgrade VIP for more or unlimited chat."
+  },
+  {
+    "path": "chat.quotaDisabledTitle",
+    "zh": "暂不可对话",
+    "en": "Chat unavailable"
+  },
+  {
+    "path": "chat.quotaDisabledMessage",
+    "zh": "当前套餐未开启 Free Chat 对话配额，请联系客服或升级会员。",
+    "en": "Your plan does not include Free Chat quota. Upgrade or contact support."
+  },
+  {
+    "path": "chat.quotaUpgrade",
+    "zh": "升级 VIP",
+    "en": "Upgrade VIP"
+  },
+  {
+    "path": "chat.voiceQuotaExceededTitle",
+    "zh": "语音配额已用完",
+    "en": "Voice quota used up"
+  },
+  {
+    "path": "chat.voiceQuotaExceededMessage",
+    "zh": "本周期角色语音次数已用完，升级 VIP 可获得更多语音配额。",
+    "en": "Your voice quota for this period is used up. Upgrade VIP for more character voice."
+  },
+  {
+    "path": "chat.thinking",
+    "zh": "思考中",
+    "en": "Thinking"
+  },
+  {
+    "path": "chat.protectedChat",
+    "zh": "ЗАЩИЩЁННЫЙ ЧАТ",
+    "en": "PROTECTED CHAT"
+  },
+  {
+    "path": "chat.crimsonLongNight",
+    "zh": "CRIMSON LONG NIGHT",
+    "en": "CRIMSON LONG NIGHT"
+  },
+  {
+    "path": "chat.secretLabel",
+    "zh": "СЕКРЕТНО",
+    "en": "SECRET"
+  },
+  {
+    "path": "chat.faction",
+    "zh": "阵营",
+    "en": "Faction"
+  },
+  {
+    "path": "chat.duty",
+    "zh": "职责",
+    "en": "Duty"
+  },
+  {
+    "path": "chat.notes",
+    "zh": "备注",
+    "en": "Notes"
+  },
+  {
+    "path": "chat.tone.happy",
+    "zh": "开心",
+    "en": "Happy"
+  },
+  {
+    "path": "chat.tone.sad",
+    "zh": "低落",
+    "en": "Sad"
+  },
+  {
+    "path": "chat.tone.angry",
+    "zh": "生气",
+    "en": "Angry"
+  },
+  {
+    "path": "chat.tone.gentle",
+    "zh": "温柔",
+    "en": "Gentle"
+  },
+  {
+    "path": "chat.tone.worried",
+    "zh": "担忧",
+    "en": "Worried"
+  },
+  {
+    "path": "chat.tone.excited",
+    "zh": "兴奋",
+    "en": "Excited"
+  },
+  {
+    "path": "chat.tone.calm",
+    "zh": "平静",
+    "en": "Calm"
+  },
+  {
+    "path": "chat.tone.shy",
+    "zh": "害羞",
+    "en": "Shy"
+  },
+  {
+    "path": "chat.tone.playful",
+    "zh": "俏皮",
+    "en": "Playful"
+  },
+  {
+    "path": "chat.tone.serious",
+    "zh": "严肃",
+    "en": "Serious"
+  },
+  {
+    "path": "chat.tone.neutral",
+    "zh": "平常",
+    "en": "Neutral"
+  }
+]

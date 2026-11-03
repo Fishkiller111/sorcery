@@ -1,0 +1,42 @@
+# EAS CLI uses the Git repository root ignore file in a monorepo.
+# Keep the protections below in sync with .gitignore.
+# 本目录当前不是公开仓库；忽略规则不是脱敏或审计的替代品。
+**/node_modules/
+**/.expo/
+**/dist/
+**/web-build/
+**/ios/
+**/android/
+**/.env
+**/.env.*
+!**/.env.example
+**/*.key
+**/*.pem
+**/*.p12
+**/*.p8
+**/*.jks
+**/*.mobileprovision
+.DS_Store
+
+# 内部权利证据和未经放行的构建候选不得随源码发布。
+**/*.private.csv
+**/*.private.json
+**/*.private.md
+**/*.private/
+/distributions/admin/candidate-not-release/
+/distributions/admin/candidate-not-release.*
+
+# Do not upload unrelated workspaces, private artifacts, or local credentials.
+.git/
+/apps/telegram-bot/
+/distributions/
+/releases/
+**/.npmrc
+**/credentials.json
+**/GoogleService-Info.plist
+**/google-services.json
+**/*.pfx
+
+# Python validation caches are local only.
+**/__pycache__/
+**/*.pyc

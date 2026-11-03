@@ -1,0 +1,46 @@
+export const TOKENS = {
+  colors: {
+    bg: '#050505',
+    bgElevated: '#0a0a0f',
+    card: '#111118',
+    cardBorder: 'rgba(99, 102, 241, 0.18)',
+    accent: '#6366f1',
+    accentMuted: 'rgba(99, 102, 241, 0.35)',
+    text: '#f4f4f5',
+    textMuted: '#a1a1aa',
+    textSubtle: '#71717a',
+    success: '#22c55e',
+    danger: '#ef4444',
+    navBg: 'rgba(8, 8, 12, 0.94)',
+    navBorder: 'rgba(255, 255, 255, 0.08)',
+  },
+  radius: {
+    sm: 8,
+    md: 12,
+    lg: 16,
+    pill: 999,
+  },
+  spacing: {
+    screen: 20,
+    card: 16,
+    section: 24,
+  },
+  /** 模式页 / 首页（121.svg）浅色雕版视觉 */
+  modePage: {
+    bg: '#f3f3f3',
+    bgPure: '#d4d2ce',
+    text: '#0a0a0a',
+    textMuted: '#4a4a4a',
+    textSubtle: '#7a7a7a',
+    line: 'rgba(0, 0, 0, 0.12)',
+    cardOverlay: 'rgba(255, 255, 255, 0.52)',
+    cardSelected: 'rgba(0, 0, 0, 0.06)',
+    cardBorder: 'rgba(255, 255, 255, 0.85)',
+    enterBg: '#0a0a0a',
+    enterText: '#f5f5f3',
+    /** 内容区左侧留白：齿轮可见右缘 + 间距 */
+    railWidth: 78,
+    gearSize: 112,
+    lineWidth: 1,
+  },
+} as const;

@@ -1,0 +1,55 @@
+# When .easignore exists, EAS ignores .gitignore entirely — keep both in sync.
+# See https://docs.expo.dev/build-reference/easignore/
+
+# --- from .gitignore ---
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native dirs are generated on EAS via prebuild. Uploading a local `ios/`
+# (from `pnpm ios:native`) bakes absolute HERMES_CLI_PATH like
+# /Volumes/MachineLearning/... and breaks cloud archive.
+ios/
+android/
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.DS_Store
+*.pem
+.env*.local
+.env.test
+*.tsbuildinfo
+.playwright-mcp
+剧情模式
+
+# --- EAS-only extras ---
+/UI/
+docs/
+deploy/
+scripts/
+*.md
+!README.md
+
+# Standalone checkout protection; monorepo EAS uses repository-root .easignore.
+.env
+.env.*
+!.env.example
+.npmrc
+credentials.json
+GoogleService-Info.plist
+google-services.json
+*.pfx
+*.private.*
+*.private/
+.git/

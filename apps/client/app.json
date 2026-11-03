@@ -1,0 +1,103 @@
+{
+  "expo": {
+    "name": "SoulthreadScene",
+    "slug": "soulthread-open",
+    "version": "1.1.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "soulthreadscene",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.soulthread",
+      "buildNumber": "5",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "发送语音消息、语音连线功能因需要获取声音，需要访问麦克风权限，用于收录声音和语音沟通。",
+        "NSPhotoLibraryUsageDescription": "图片或者视频上传、保存功能需要处理图像和视频文件，需访问相册权限，用于文件的读写与操作。",
+        "NSPhotoLibraryAddUsageDescription": "图片或者视频上传、保存功能需要处理图像和视频文件，需访问相册权限，用于文件的读写与操作。",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.example.soulthread",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0b0f"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icon.png",
+      "bundler": "metro",
+      "name": "Soulthread",
+      "description": "Memory-driven AI companions — Story Mode and Free Chat in your browser.",
+      "lang": "en"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-apple-authentication",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "发送语音消息、语音连线功能因需要获取声音，需要访问麦克风权限，用于收录声音和语音沟通。"
+        }
+      ],
+      "expo-video",
+      "expo-asset",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "图片或者视频上传、保存功能需要处理图像和视频文件，需访问相册权限，用于文件的读写与操作。"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "图片或者视频上传、保存功能需要处理图像和视频文件，需访问相册权限，用于文件的读写与操作。",
+          "savePhotosPermission": "图片或者视频上传、保存功能需要处理图像和视频文件，需访问相册权限，用于文件的读写与操作。"
+        }
+      ],
+      "expo-localization",
+      "expo-font",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.REPLACE_WITH_YOUR_IOS_CLIENT_ID"
+        }
+      ],
+      "expo-image",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#0a0b0f"
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "extraPods": [
+              {
+                "name": "AppCheckCore",
+                "version": "11.2.0"
+              }
+            ]
+          }
+        }
+      ],
+      "expo-iap"
+    ],
+    "extra": {
+      "router": {}
+    }
+  }
+}
