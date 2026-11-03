@@ -1,0 +1,104 @@
+# Preview only. Create .env and private/ with setup.py first.
+# This network intentionally permits egress when users configure external providers.
+name: ${COMPOSE_PROJECT_NAME:?Run python3 setup.py first}
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: ${DB_USER:?}
+      POSTGRES_DB: ${DB_NAME:?}
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+    secrets: [db_password]
+    volumes: ['database:/var/lib/postgresql/data']
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"']
+      interval: 5s
+      timeout: 3s
+      retries: 40
+    networks: [app]
+  redis:
+    image: redis:7.4.2-alpine
+    command: ['redis-server', '--appendonly', 'yes', '--notify-keyspace-events', 'Ex']
+    volumes: ['queue:/data']
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 5s
+      timeout: 3s
+      retries: 40
+    networks: [app]
+  init:
+    image: ${SOULTHREAD_IMAGE:?}
+    profiles: [setup]
+    env_file: ['.env']
+    environment:
+      SOULTHREAD_CONFIRM_EMPTY_DB: 'yes'
+    entrypoint: ['/usr/local/bin/ai-character-init-empty-db']
+    networks: [app]
+  admin-init:
+    image: ${SOULTHREAD_IMAGE:?}
+    profiles: [setup]
+    env_file: ['.env']
+    environment:
+      SOULTHREAD_CONFIRM_FIRST_ADMIN: 'yes'
+      SOULTHREAD_ADMIN_PASSWORD_FILE: /run/secrets/admin_password
+    secrets: [admin_password]
+    entrypoint: ['/usr/local/bin/ai-character-init-empty-db', 'create-first-admin']
+    networks: [app]
+  api:
+    image: ${SOULTHREAD_IMAGE:?}
+    env_file: ['.env']
+    environment:
+      SOULTHREAD_PROMPT_DIR: /app/prompts
+    volumes:
+      - './config.yaml:/app/backend/etc/ai-character.yaml:ro'
+      - './prompts:/app/prompts:ro'
+      - 'static:/app/static'
+    ports: ['127.0.0.1:${API_PORT:-18888}:8888']
+    command: ['/usr/local/bin/ai-character-api', '-f', '/app/backend/etc/ai-character.yaml']
+    healthcheck:
+      test: ['CMD', '/usr/local/bin/sorcery-healthcheck', 'api']
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 15s
+    depends_on:
+      db: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    read_only: true
+    tmpfs: ['/tmp:rw,noexec,nosuid,size=64m']
+    cap_drop: ['ALL']
+    security_opt: ['no-new-privileges:true']
+    networks: [app]
+  worker:
+    image: ${SOULTHREAD_IMAGE:?}
+    env_file: ['.env']
+    environment:
+      SOULTHREAD_PROMPT_DIR: /app/prompts
+    volumes:
+      - './config.yaml:/app/backend/etc/ai-character.yaml:ro'
+      - './prompts:/app/prompts:ro'
+      - 'static:/app/static'
+    command: ['/usr/local/bin/ai-character-worker', '-f', '/app/backend/etc/ai-character.yaml']
+    healthcheck:
+      test: ['CMD', '/usr/local/bin/sorcery-healthcheck', 'worker']
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 15s
+    depends_on:
+      db: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    read_only: true
+    tmpfs: ['/tmp:rw,noexec,nosuid,size=64m']
+    cap_drop: ['ALL']
+    security_opt: ['no-new-privileges:true']
+    networks: [app]
+secrets:
+  db_password: {file: './private/db_password'}
+  admin_password: {file: './private/admin_password'}
+volumes:
+  database:
+  queue:
+  static:
+networks:
+  app: {}

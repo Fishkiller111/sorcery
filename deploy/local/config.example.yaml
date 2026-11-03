@@ -1,0 +1,232 @@
+---
+Name: sorcery-api
+Host: 0.0.0.0
+Port: 8888
+Timeout: 30000
+MaxBytes: 104857600
+Auth:
+  AccessSecret: "${JWT_ACCESS_SECRET}"
+  AccessExpire: 86400
+Log:
+  ServiceName: sorcery-api
+  Mode: console
+  Level: info
+Database:
+  Host: "${DB_HOST}"
+  Port: 5432
+  User: "${DB_USER}"
+  Pass: "${DB_PASS}"
+  Name: "${DB_NAME}"
+  MaxOpenConns: 20
+  MaxIdleConns: 10
+  ConnMaxLifetimeSeconds: 60
+Redis:
+  Host: "${REDIS_HOST}"
+  Port: 6379
+  Pass: "${REDIS_PASS}"
+  DB: 2
+SMTP:
+  Host: ''
+  Port: 1
+  User: ''
+  Pass: ''
+  From: ''
+Resend:
+  ApiKey: ''
+  Domain: ''
+  ReplyTo: ''
+  PublicAppURL: ''
+LLM:
+  ApiKey: ''
+  Endpoint: ''
+  Model: ''
+Naga:
+  ApiKey: ''
+  Endpoint: ''
+  Model: ''
+Embedding:
+  ApiKey: ''
+  Endpoint: ''
+  Model: ''
+FishAudio:
+  ApiKey: ''
+  Endpoint: ''
+  VoiceCatalog: []
+ElevenLabs:
+  ApiKey: ''
+  Endpoint: ''
+  DefaultModelId: ''
+LiveKit:
+  URL: ''
+  APIKey: ''
+  APISecret: ''
+  AgentName: ''
+OpenRouter:
+  ApiKey: ''
+  Endpoint: ''
+  Model: ''
+ImageGen:
+  Enabled: false
+  ApiKey: ''
+  Endpoint: ''
+  StandardModel: ''
+  MatureModel: ''
+  Size: ''
+  Timeout: 180
+VideoGateway:
+  BaseURL: ''
+  APIKey: ''
+  Timeout: 60
+Debug:
+  ConversationEnabled: false
+  LogFile: ''
+  RingBufferSize: 200
+Story:
+  DebugResetEnabled: false
+Simulator:
+  PublicEnabled: false
+Business:
+  ChatWindowSize: 12
+  MemoryRecallTopK: 3
+  MemoryRecallMinSimilarity: 0.5
+  ProactiveTTL: 0
+  ProactiveTTLMinSec: 0
+  ProactiveTTLMaxSec: 0
+  ProactiveMaxCountMin: 8
+  ProactiveMaxCountMax: 12
+  EventCooldownDefault: 10
+  DefaultUserVoiceId: ''
+  MaxAgentsPerUser: 10
+  PublicStaticBaseURL: ''
+Admin:
+  ApiKey: ''
+  AccessSecret: "${ADMIN_JWT_SECRET}"
+  AccessExpire: 86400
+Moderation:
+  TextEnabled: true
+  ImageEnabled: true
+VIP:
+  EnforcementEnabled: true
+  PermsCacheTTL: 60
+  DefaultCurrency: ''
+  CheckoutTTLMinutes: 30
+  OrderGCDays: 30
+  Stripe:
+    SecretKey: ''
+    WebhookSecret: ''
+    SuccessURL: ''
+    CancelURL: ''
+    VipProductId: ''
+    ConnectOnboardingReturnURL: ''
+    ConnectOnboardingRefreshURL: ''
+    ConnectDefaultCountry: ''
+  PayPal:
+    ClientID: ''
+    ClientSecret: ''
+    WebhookID: ''
+    Mode: sandbox
+    SuccessURL: ''
+    CancelURL: ''
+  NowPayments:
+    APIKey: ''
+    IPNSecret: ''
+    Mode: sandbox
+    IPNCallbackURL: ''
+    SuccessURL: ''
+    CancelURL: ''
+    PayCurrency: ''
+    SettleCurrency: ''
+  ApplePay:
+    Enabled: false
+    StripeEnabled: false
+    MerchantIdentifier: ''
+    MerchantDomain: ''
+    DisplayName: ''
+  AppleIAP:
+    BundleID: ''
+OAuth:
+  Google:
+    ClientId: ''
+    ClientIds: []
+  Apple:
+    TeamID: ''
+    ClientId: ''
+    KeyID: ''
+    PrivateKey: ''
+  Discord:
+    ClientId: ''
+    ClientSecret: ''
+    RedirectURI: ''
+    SuccessURL: ''
+  Telegram:
+    BotApiKey: ''
+    BotToken: ''
+    CustomAgentBotToken: ''
+    CustomAgentBotUsername: ''
+Job:
+  Stream: sorcery:preview:jobs
+  Group: sorcery-preview-worker
+  BlockMs: 5000
+  BatchSize: 10
+  ClaimIdleMs: 300000
+  HealthPort: 8889
+  FastConcurrency: 8
+  StateUpdateConcurrency: 8
+  SummaryConcurrency: 4
+  SlowConcurrency: 6
+  AutoPostConcurrency: 6
+  LagWarnPending: 200
+  MaxRetry:
+    Embedding: 2
+    StateUpdate: 3
+    Summary: 3
+WebSocket:
+  AllowedOrigins: []
+  EnableCrossReplicaPush: true
+  SessionAffinityEnabled: true
+  MaxConnections: 10000
+  Admission:
+    Enabled: true
+    SoftLimitRatio: 0.8
+    ClusterMaxConnections: 0
+    VIPBypassSoftLimit: true
+    PerUserMaxConnections: 3
+    VIPPerUserMaxConnections: 5
+    RetryAfterSeconds: 30
+    LeaseTTLSeconds: 120
+    WaitQueueEnabled: true
+    WaitQueueSeconds: 30
+    WaitPollSeconds: 2
+    VIPPreemptEnabled: true
+    VIPPreemptMaxAttempts: 3
+RateLimit:
+  Enabled: true
+  ChatSendPerMinute: 60
+  ChatSendBurst: 10
+  WSUpgradePerMinute: 30
+  WSUpgradeBurst: 5
+  AdminConversationsPerMinute: 60
+  AdminConversationsBurst: 20
+LLMGen:
+  MaxConcurrency: 50
+  LockTTLSeconds: 300
+  LockRefreshIntervalSeconds: 20
+EmailMarketing:
+  PublicBaseURL: ''
+  DefaultRateLimit: 10
+  DefaultAnnouncementLang: ''
+  MaxRecipientsPerCampaign: 100000
+  MaxCsvSizeBytes: 10485760
+  MaxCsvRows: 200000
+  TrackingSecret: ''
+  MaxRetries: 3
+  EnqueueBatchSize: 500
+  WorkerFetchBatchSize: 100
+  AIApiKey: ''
+  AIEndpoint: ''
+  AIModel: ''
+  AITemperature: 0.7
+  AIMaxTokens: 4096
+  ScrapeMaxJobsPerDay: 30
+  ScrapeMaxLeadsPerJob: 200
+  ScrapeMaxLeadsHardCap: 500

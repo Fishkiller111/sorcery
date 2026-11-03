@@ -9,6 +9,7 @@
 - [`apps/client`](apps/client/README.md)：Expo Router 客户端、环境变量、源码结构、Web／原生开发、构建和限制。
 - [`apps/telegram-bot`](apps/telegram-bot/README.md)：Telegram Bot 源码、配置、开发及测试。
 - [`distributions/admin/0.1.0-preview`](distributions/admin/0.1.0-preview/README.md)：管理后台静态文件及第三方许可证，不含管理端源码。
+- [`deploy/local`](deploy/local/README.md)：空库自建预览配置与操作说明；后端镜像尚未发布。
 - [`apps/client/assets/PLACEHOLDERS.md`](apps/client/assets/PLACEHOLDERS.md)：原图片、SVG、音频和视频由自制占位素材替换；实际视觉及故事体验会降级。
 - [`LICENSE`](LICENSE) 与 [`apps/client/LICENSE-SCOPE.md`](apps/client/LICENSE-SCOPE.md)：本项目有权开放的自有源码采用 Apache-2.0；其他内容按其各自权利及条款处理。
 
@@ -66,6 +67,6 @@ npm run dev
 
 ## 二次开发
 
-路由在 `apps/client/app/`，业务组件与页面在 `apps/client/src/`，HTTP／WebSocket 客户端在 `apps/client/src/api/`；在自己的分支上修改并运行上述检查。静态素材只能使用自己有权使用及分发的内容；App 包名、iOS Google 登录配置和签名默认是占位，发布移动应用前需配置自己的账号和平台能力。后端仅计划分发镜像，管理端仅计划分发静态资源，不提供这两部分源代码。
+路由在 `apps/client/app/`，业务组件与页面在 `apps/client/src/`，HTTP／WebSocket 客户端在 `apps/client/src/api/`；在自己的分支上修改并运行上述检查。静态素材只能使用自己有权使用及分发的内容；App 包名、iOS Google 登录配置和签名默认是占位，发布移动应用前需配置自己的账号和平台能力。后端仅计划分发镜像，管理端只分发静态资源，不提供这两部分源代码。
 
 语音可能加载第三方 SDK，其他可选功能涉及 Telegram、Apple、Google 和支付服务；部署者需自行评估配置、网络、用户同意、隐私和第三方许可。当前缺少完整第三方 notice，`standard-navigation@0.0.5` 上游包的完整许可证文本尚待核实；请见 [依赖与许可状态](THIRD-PARTY-STATUS.md)。
