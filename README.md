@@ -10,6 +10,7 @@
 - [`apps/telegram-bot`](apps/telegram-bot/README.md)：Telegram Bot 源码、配置、开发及测试。
 - [`distributions/admin/0.1.0-preview`](distributions/admin/0.1.0-preview/README.md)：管理后台静态文件及第三方许可证，不含管理端源码。
 - [`deploy/local`](deploy/local/README.md)：空库自建预览配置与操作说明；后端镜像尚未发布。
+- [`licenses/backend`](licenses/backend/README.md)：后端候选的第三方许可及对应第三方源码材料，不含本项目闭源后端源码。
 - [`apps/client/assets/PLACEHOLDERS.md`](apps/client/assets/PLACEHOLDERS.md)：原图片、SVG、音频和视频由自制占位素材替换；实际视觉及故事体验会降级。
 - [`LICENSE`](LICENSE) 与 [`apps/client/LICENSE-SCOPE.md`](apps/client/LICENSE-SCOPE.md)：本项目有权开放的自有源码采用 Apache-2.0；其他内容按其各自权利及条款处理。
 
