@@ -1,6 +1,6 @@
 # Sorcery / Soulthread 客户端
 
-本仓库当前提供 Soulthread App / Web 客户端源码，基于 Expo、React Native 和 TypeScript。后端源码、管理端源码及原项目媒体素材**不在此首版源码中**。Telegram 运营 Bot 源码位于 `apps/telegram-bot/`；管理端静态包及后端镜像尚未发布，不应将计划写成已交付。
+本仓库当前提供 Soulthread App / Web 客户端源码，基于 Expo、React Native 和 TypeScript。后端源码、管理端源码及原项目媒体素材**不在此首版源码中**。Telegram 运营 Bot 源码位于 `apps/telegram-bot/`；管理后台提供编译后的静态预览包，后端镜像尚未发布。
 
 > **早期版本与安全提示**：运行依赖的 2026-11-03 本地审计有 5 项 high（无 critical），未修复；不要将此版本直接部署给真实用户。iOS、Android 真机及真实后端、登录、支付、语音和 Telegram 尚未完整验证。依赖安全与第三方许可证需在发行前复核；本源码许可证不覆盖第三方依赖或商标。
 
@@ -8,6 +8,7 @@
 
 - [`apps/client`](apps/client/README.md)：Expo Router 客户端、环境变量、源码结构、Web／原生开发、构建和限制。
 - [`apps/telegram-bot`](apps/telegram-bot/README.md)：Telegram Bot 源码、配置、开发及测试。
+- [`distributions/admin/0.1.0-preview`](distributions/admin/0.1.0-preview/README.md)：管理后台静态文件及第三方许可证，不含管理端源码。
 - [`apps/client/assets/PLACEHOLDERS.md`](apps/client/assets/PLACEHOLDERS.md)：原图片、SVG、音频和视频由自制占位素材替换；实际视觉及故事体验会降级。
 - [`LICENSE`](LICENSE) 与 [`apps/client/LICENSE-SCOPE.md`](apps/client/LICENSE-SCOPE.md)：本项目有权开放的自有源码采用 Apache-2.0；其他内容按其各自权利及条款处理。
 
@@ -58,6 +59,10 @@ npm run dev
 ```
 
 本地 polling 会删除该 Telegram Bot 当前 webhook；测试时请使用独立测试 Bot。真实 Telegram、支付与后端联调尚未验收。配置说明、Webhook、模拟测试和自定义注意事项见 [Bot README](apps/telegram-bot/README.md)；不要将密钥写入客户端、仓库或 issue。
+
+## 管理后台静态预览
+
+管理后台只提供[已编译静态文件](distributions/admin/0.1.0-preview/README.md)，不提供源码。按包内说明校验 SHA-256，把 `static/` 部署到静态服务器，并将同源 `/api/v1/` 和 `/static/` 反向代理到兼容后端；后端镜像目前尚未发布。该版本部分 Telegram 公告、召回与邮件功能固定受限，不能仅通过运行时配置开启。静态包不代替后端鉴权或安全控制。
 
 ## 二次开发
 
