@@ -1,0 +1,49 @@
+{
+  "name": "soulthread-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Soulthread Telegram bot — light chat entry + Mini App funnel to Web",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test:config": "tsx scripts/test-config.ts",
+    "test:webhook": "tsx scripts/test-webhook.ts",
+    "test:payload": "tsx scripts/test-start-payload.ts",
+    "test:locale": "tsx scripts/test-locale.ts",
+    "test:api-integration": "tsx scripts/test-api-integration.ts",
+    "test:proxy": "tsx scripts/test-proxy-connect.ts",
+    "predev": "node scripts/check-urlshim-topology.cjs",
+    "prestart": "node scripts/check-urlshim-topology.cjs",
+    "prebuild": "node scripts/check-urlshim-topology.cjs",
+    "test:urlshim": "node scripts/check-urlshim-topology.cjs && node scripts/test-urlshim-topology.cjs && node scripts/test-urlshim-behavior.cjs"
+  },
+  "keywords": [
+    "telegram",
+    "soulthread",
+    "grammy"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "grammy": "^1.45.1",
+    "https-proxy-agent": "7.0.6",
+    "whatwg-url": "file:./vendor/whatwg-url-node20",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "whatwg-url": "$whatwg-url"
+  }
+}

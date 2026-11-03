@@ -1,0 +1,12 @@
+{
+  "name": "whatwg-url",
+  "version": "0.0.0-node20-shim",
+  "description": "Private narrow compatibility shim for node-fetch 2.7.0 on Node >=20 only; not the WHATWG URL package",
+  "main": "index.cjs",
+  "type": "commonjs",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "Apache-2.0"
+}

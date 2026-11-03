@@ -1,12 +1,13 @@
 # Sorcery / Soulthread 客户端
 
-本仓库当前提供 Soulthread App / Web 客户端源码，基于 Expo、React Native 和 TypeScript。后端源码、管理端源码及原项目媒体素材**不在此首版源码中**。Telegram 运营 Bot、管理端静态包及后端镜像计划另行整理；尚未发布的内容没有可用下载地址，不应将计划写成已交付。
+本仓库当前提供 Soulthread App / Web 客户端源码，基于 Expo、React Native 和 TypeScript。后端源码、管理端源码及原项目媒体素材**不在此首版源码中**。Telegram 运营 Bot 源码位于 `apps/telegram-bot/`；管理端静态包及后端镜像尚未发布，不应将计划写成已交付。
 
 > **早期版本与安全提示**：运行依赖的 2026-11-03 本地审计有 5 项 high（无 critical），未修复；不要将此版本直接部署给真实用户。iOS、Android 真机及真实后端、登录、支付、语音和 Telegram 尚未完整验证。依赖安全与第三方许可证需在发行前复核；本源码许可证不覆盖第三方依赖或商标。
 
 ## 目录
 
 - [`apps/client`](apps/client/README.md)：Expo Router 客户端、环境变量、源码结构、Web／原生开发、构建和限制。
+- [`apps/telegram-bot`](apps/telegram-bot/README.md)：Telegram Bot 源码、配置、开发及测试。
 - [`apps/client/assets/PLACEHOLDERS.md`](apps/client/assets/PLACEHOLDERS.md)：原图片、SVG、音频和视频由自制占位素材替换；实际视觉及故事体验会降级。
 - [`LICENSE`](LICENSE) 与 [`apps/client/LICENSE-SCOPE.md`](apps/client/LICENSE-SCOPE.md)：本项目有权开放的自有源码采用 Apache-2.0；其他内容按其各自权利及条款处理。
 
@@ -41,6 +42,22 @@ npm run build:web
 上面 example.invalid 地址仅用于隔离构建，不是实际可用的政策、生产服务或后端。Web 产物位于 `apps/client/dist/`，未被提交到本仓库。Web 构建成功不代表线上功能、原生设备或真实业务已验收。
 
 本项目无需在客户端保存服务端密钥。后端现阶段未提供已公开、可下载的正式镜像与安全自建配置，启动前需自行准备兼容的测试服务；不要假定健康接口通过就代表聊天、音频、支付等功能可用。具体配置说明见[客户端文档](apps/client/README.md)。
+
+## Telegram Bot
+
+Bot 源码位于 `apps/telegram-bot/`，需自行准备兼容的后端、Telegram 测试 Bot 和私密配置：
+
+```bash
+cd apps/telegram-bot
+npm ci
+cp .env.example .env
+# 编辑 .env，填写你自己的服务地址和测试凭据，不要提交此文件。
+npm run typecheck
+npm run test:urlshim
+npm run dev
+```
+
+本地 polling 会删除该 Telegram Bot 当前 webhook；测试时请使用独立测试 Bot。真实 Telegram、支付与后端联调尚未验收。配置说明、Webhook、模拟测试和自定义注意事项见 [Bot README](apps/telegram-bot/README.md)；不要将密钥写入客户端、仓库或 issue。
 
 ## 二次开发
 
