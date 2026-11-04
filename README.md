@@ -3,9 +3,9 @@
 </p>
 
 <h1 align="center">Sorcery / Soulthread</h1>
-<p align="center"><strong>AI 虚拟伴侣 · 角色互动 · 沉浸式故事</strong></p>
+<p align="center"><strong>与 AI 角色聊天、探索互动故事，搭建属于你的虚拟世界</strong></p>
 <p align="center">
-  中文 · <a href="README.en.md">English</a> · <a href="#sorcery-是什么">项目介绍</a> · <a href="#系统架构">系统架构</a> · <a href="#快速开始空库后端">快速开始</a> · <a href="#联系方式">联系方式</a>
+  中文 · <a href="README.en.md">English</a> · <a href="https://soulthread.talk/">官网</a> · <a href="#sorcery-是什么">项目介绍</a> · <a href="#系统架构">系统架构</a> · <a href="#快速开始空库后端">快速开始</a> · <a href="#联系方式">联系方式</a>
 </p>
 <p align="center">
   <a href="apps/client/LICENSE-SCOPE.md"><img src="https://img.shields.io/badge/App%20%26%20Bot-Apache--2.0-6b7fd7" alt="App 与 Bot 源码：Apache-2.0" /></a>
@@ -13,6 +13,18 @@
   <a href="deploy/local/README.md"><img src="https://img.shields.io/badge/Backend%20Image-linux%2Farm64-365c8e" alt="后端镜像：Linux ARM64" /></a>
   <a href="https://github.com/Fishkiller111/sorcery/releases/tag/v0.2.0-preview"><img src="https://img.shields.io/badge/Release-v0.2.0--preview-8756a5" alt="发行版：v0.2.0-preview" /></a>
 </p>
+
+## 10 秒了解 Sorcery
+
+**和 AI 角色聊天、探索互动故事，也可以搭建属于自己的角色世界。**
+
+- **自由聊天：**选择或创建虚拟伴侣，围绕角色设定和对话上下文展开交流。
+- **故事与世界：**进入故事场景，与角色互动，探索自定义的世界。
+- **自建与扩展：**修改 App 和 Telegram Bot 源码，配置自己的角色、提示词和 AI 服务。
+
+**开源范围：**App 和 Telegram Bot 提供源码；管理端仅提供静态包；后端为闭源 Docker 镜像。新部署是空库，需自行配置内容和模型。
+
+[访问官网](https://soulthread.talk/) · [查看开源范围](#发行内容和技术栈) · [本机自建](#快速开始空库后端) · [English](README.en.md)
 
 > **预览版，不适合直接用于生产。** 本仓库提供 Soulthread 客户端和 Telegram Bot 源码、管理后台静态包，以及可自建的闭源后端镜像。客户端依赖审计有 5 项 high 尚未修复；真实第三方服务、原生设备和生产部署尚未完整验收。
 

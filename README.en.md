@@ -3,9 +3,9 @@
 </p>
 
 <h1 align="center">Sorcery / Soulthread</h1>
-<p align="center"><strong>AI companions · Character interactions · Immersive stories</strong></p>
+<p align="center"><strong>Chat with AI characters, explore interactive stories, and build your own world</strong></p>
 <p align="center">
-  <a href="README.md">简体中文</a> · English · <a href="#what-is-sorcery">About</a> · <a href="#architecture">Architecture</a> · <a href="#quick-start-empty-backend-preview">Quick start</a> · <a href="#contact">Contact</a>
+  <a href="README.md">简体中文</a> · English · <a href="https://soulthread.talk/">Website</a> · <a href="#what-is-sorcery">About</a> · <a href="#architecture">Architecture</a> · <a href="#quick-start-empty-backend-preview">Quick start</a> · <a href="#contact">Contact</a>
 </p>
 <p align="center">
   <a href="apps/client/LICENSE-SCOPE.md"><img src="https://img.shields.io/badge/App%20%26%20Bot-Apache--2.0-6b7fd7" alt="App and Bot source: Apache-2.0" /></a>
@@ -14,7 +14,17 @@
   <a href="https://github.com/Fishkiller111/sorcery/releases/tag/v0.2.0-preview"><img src="https://img.shields.io/badge/Release-v0.2.0--preview-8756a5" alt="Release: v0.2.0-preview" /></a>
 </p>
 
-An AI character and interactive storytelling project with a cross-platform client, a Telegram bot, a prebuilt management console and a self-hosted backend preview.
+## Sorcery in 10 seconds
+
+**Chat with AI characters, explore interactive stories, and build a world of your own.**
+
+- **Free Chat:** choose or create a virtual companion and interact using its character profile and conversation context.
+- **Stories and worlds:** enter story scenes, interact with characters and explore custom worlds.
+- **Self-host and extend:** modify the app and Telegram bot source, and configure your own characters, prompts and AI services.
+
+**Open-source scope:** app and Telegram bot source are open; the admin console is prebuilt static files, and the backend is a closed-source Docker image. A fresh deployment starts with an empty database and requires your own content and model configuration.
+
+[Visit website](https://soulthread.talk/) · [Distribution details](#what-is-sorcery) · [Self-hosting](#quick-start-empty-backend-preview) · [简体中文](README.md)
 
 > **Preview, not production-ready.** The client runtime dependency audit recorded 5 unresolved high-severity findings (2026-11-03). Real AI providers, Telegram, payments, voice, iOS and Android devices, and production deployment have not been fully verified. Some admin settings cannot initially be saved on an empty database, and video generation is disabled in this backend preview. Review [security and third-party status](THIRD-PARTY-STATUS.md) before deploying.
 
