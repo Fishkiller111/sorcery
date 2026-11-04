@@ -1,6 +1,18 @@
-# Sorcery / Soulthread
+<p align="center">
+  <img src="docs/assets/sorcery-banner.png" alt="Sorcery · Soulthread Project — AI companions and interactive stories" width="100%" />
+</p>
 
-**Language:** [简体中文](README.md) | English
+<h1 align="center">Sorcery / Soulthread</h1>
+<p align="center"><strong>AI companions · Character interactions · Immersive stories</strong></p>
+<p align="center">
+  <a href="README.md">简体中文</a> · English · <a href="#what-is-sorcery">About</a> · <a href="#architecture">Architecture</a> · <a href="#quick-start-empty-backend-preview">Quick start</a> · <a href="#contact">Contact</a>
+</p>
+<p align="center">
+  <a href="apps/client/LICENSE-SCOPE.md"><img src="https://img.shields.io/badge/App%20%26%20Bot-Apache--2.0-6b7fd7" alt="App and Bot source: Apache-2.0" /></a>
+  <a href="licenses/backend/DISTRIBUTION-TERMS.md"><img src="https://img.shields.io/badge/Backend-Closed--source%20Image-45465b" alt="Backend: closed-source image" /></a>
+  <a href="deploy/local/README.md"><img src="https://img.shields.io/badge/Backend%20Image-linux%2Farm64-365c8e" alt="Backend image: Linux ARM64" /></a>
+  <a href="https://github.com/Fishkiller111/sorcery/releases/tag/v0.2.0-preview"><img src="https://img.shields.io/badge/Release-v0.2.0--preview-8756a5" alt="Release: v0.2.0-preview" /></a>
+</p>
 
 An AI character and interactive storytelling project with a cross-platform client, a Telegram bot, a prebuilt management console and a self-hosted backend preview.
 
@@ -152,3 +164,11 @@ The client runtime dependency audit found **5 high, 10 moderate and 2 low** find
 ## License
 
 The project's own client and Telegram bot source is distributed under [Apache-2.0](LICENSE), subject to the stated [scope](apps/client/LICENSE-SCOPE.md). The backend remains closed source and is offered under its [binary distribution terms](licenses/backend/DISTRIBUTION-TERMS.md). Management-console terms and third-party notices are included with its [static distribution](distributions/admin/0.1.1-preview/README.md). Licenses do not automatically grant rights to trademarks, services, third-party dependencies or content.
+
+## Contact
+
+For project discussions or collaboration, scan the WeChat QR code below to contact the maintainer, **Fish killer**. This QR code is published in the public repository. Please do not post passwords, tokens, or private information in public issues.
+
+<a href="docs/assets/wechat-contact.jpg"><img src="docs/assets/wechat-contact.jpg" alt="WeChat contact QR code (click to view full image)" width="220" /></a>
+
+> Click the image to view it in full, then scan it with WeChat.

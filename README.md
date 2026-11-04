@@ -1,6 +1,18 @@
-# Sorcery / Soulthread
+<p align="center">
+  <img src="docs/assets/sorcery-banner.png" alt="Sorcery · Soulthread Project — AI 角色陪伴与互动叙事" width="100%" />
+</p>
 
-**[中文](README.md) | [English](README.en.md)**
+<h1 align="center">Sorcery / Soulthread</h1>
+<p align="center"><strong>AI 虚拟伴侣 · 角色互动 · 沉浸式故事</strong></p>
+<p align="center">
+  中文 · <a href="README.en.md">English</a> · <a href="#sorcery-是什么">项目介绍</a> · <a href="#系统架构">系统架构</a> · <a href="#快速开始空库后端">快速开始</a> · <a href="#联系方式">联系方式</a>
+</p>
+<p align="center">
+  <a href="apps/client/LICENSE-SCOPE.md"><img src="https://img.shields.io/badge/App%20%26%20Bot-Apache--2.0-6b7fd7" alt="App 与 Bot 源码：Apache-2.0" /></a>
+  <a href="licenses/backend/DISTRIBUTION-TERMS.md"><img src="https://img.shields.io/badge/Backend-Closed--source%20Image-45465b" alt="后端：闭源镜像" /></a>
+  <a href="deploy/local/README.md"><img src="https://img.shields.io/badge/Backend%20Image-linux%2Farm64-365c8e" alt="后端镜像：Linux ARM64" /></a>
+  <a href="https://github.com/Fishkiller111/sorcery/releases/tag/v0.2.0-preview"><img src="https://img.shields.io/badge/Release-v0.2.0--preview-8756a5" alt="发行版：v0.2.0-preview" /></a>
+</p>
 
 > **预览版，不适合直接用于生产。** 本仓库提供 Soulthread 客户端和 Telegram Bot 源码、管理后台静态包，以及可自建的闭源后端镜像。客户端依赖审计有 5 项 high 尚未修复；真实第三方服务、原生设备和生产部署尚未完整验收。
 
@@ -171,3 +183,11 @@ App 构建所用站点变量需按[客户端文档](apps/client/README.md)设置
 - 视频生成功能暂不可用；空库中部分后台 LLM、语音通话及 AI 生图设置首次保存存在已知问题。真实 AI、邮件、Telegram、支付、语音、iOS / Android 和生产反向代理均未完成验收。
 - 空库无预设套餐时，内存中有临时免费额度和权限；具体约束、外联允许列表、备份与运维风险见[自建文档](deploy/local/README.md)。保留数据库、Redis、静态文件及私有配置的备份；不要对有价值的数据执行 `docker compose down -v`。
 - 本项目有权开放的客户端和 Bot 自有源码采用 [Apache-2.0](LICENSE)；后端自有二进制的免费商用及再分发条款见[后端条款](licenses/backend/DISTRIBUTION-TERMS.md)，管理端见其发行条款。第三方依赖、素材、服务及商标不因源码许可证自动获授权。
+
+## 联系方式
+
+如需项目交流或讨论合作，可使用微信扫描下方二维码联系维护者 **Fish killer**。二维码在公开仓库中展示；请勿在公开 Issue 中发送密码、令牌或其他隐私信息。
+
+<a href="docs/assets/wechat-contact.jpg"><img src="docs/assets/wechat-contact.jpg" alt="微信联系二维码（点击查看原图）" width="220" /></a>
+
+> 点击图片可查看原图；请使用微信扫码。
