@@ -1,90 +1,173 @@
-# Sorcery / Soulthread 客户端
+# Sorcery / Soulthread
 
-本仓库当前提供 Soulthread App / Web 客户端源码，基于 Expo、React Native 和 TypeScript。后端源码、管理端源码及原项目媒体素材**不在此首版源码中**。Telegram 运营 Bot 源码位于 `apps/telegram-bot/`；管理后台提供编译后的静态预览包；闭源后端以公开 Docker 镜像提供。
+**[中文](README.md) | [English](README.en.md)**
 
-> **早期版本与安全提示**：运行依赖的 2026-11-03 本地审计有 5 项 high（无 critical），未修复；不要将此版本直接部署给真实用户。iOS、Android 真机及真实后端、登录、支付、语音和 Telegram 尚未完整验证。依赖安全与第三方许可证需在发行前复核；本源码许可证不覆盖第三方依赖或商标。
+> **预览版，不适合直接用于生产。** 本仓库提供 Soulthread 客户端和 Telegram Bot 源码、管理后台静态包，以及可自建的闭源后端镜像。客户端依赖审计有 5 项 high 尚未修复；真实第三方服务、原生设备和生产部署尚未完整验收。
 
-## 目录
+## Sorcery 是什么？
 
-- [`apps/client`](apps/client/README.md)：Expo Router 客户端、环境变量、源码结构、Web／原生开发、构建和限制。
-- [`apps/telegram-bot`](apps/telegram-bot/README.md)：Telegram Bot 源码、配置、开发及测试。
-- [`distributions/admin/0.1.1-preview`](distributions/admin/0.1.1-preview/README.md)：管理后台静态文件及第三方许可证，不含管理端源码。
-- [`deploy/local`](deploy/local/README.md)：空库自建预览配置与操作说明。
-- [`licenses/backend`](licenses/backend/README.md)：后端镜像的许可说明、第三方许可及对应第三方源码材料，不含本项目闭源后端源码。
-- [`apps/client/assets/PLACEHOLDERS.md`](apps/client/assets/PLACEHOLDERS.md)：原图片、SVG、音频和视频由自制占位素材替换；实际视觉及故事体验会降级。
-- [`LICENSE`](LICENSE) 与 [`apps/client/LICENSE-SCOPE.md`](apps/client/LICENSE-SCOPE.md)：本项目有权开放的自有源码采用 Apache-2.0；其他内容按其各自权利及条款处理。
+Sorcery 是围绕 **AI 角色陪伴与互动叙事**构建的项目，Soulthread 是本仓库中的用户端体验。用户可以与 AI 女友或其他虚拟角色交流，或走进由场景、角色和选择组成的故事。项目希望让角色结合自身设定与对话上下文，提供持续的互动体验，而不只是一次性的问答。
 
-## 后端空库预览：快速启动
+系统包括：承载聊天、故事和创作界面的**用户端**；负责角色、会话、消息、记忆和模型请求等的**后端**；Telegram 内的用户及运营入口 **Bot**；以及业务管理界面。自建者可以配置自己的角色、世界、AI 服务和素材，组合出自己的体验。
 
-公开镜像为 `ghcr.io/fishkiller111/sorcery-backend:0.1.0-preview`，仅支持 **linux/arm64**；暂未提供 linux/amd64 镜像。已公开 manifest digest：`sha256:ebc8897f11ede32755cdf0df6d5aaf91ca96717831392fd25a22beacab5d9e66`。这是预览版，真实第三方服务和生产部署尚未验收。
+本项目不是单一模型，也不随空库预览镜像赠送现成角色或故事：角色体验依赖自建者配置的模型、提示词、业务数据和相关服务。AI 生成内容具有不确定性，不能将角色响应当作事实或专业意见。
 
-在安装 Docker Compose 和 Python 3 后，从仓库根目录执行：
+## AI 女友与虚拟伴侣：能做什么？
 
-```sh
+下表说明代码和产品设计覆盖的能力；**包含入口或实现，不代表空库、所有服务或设备上已经验收**。
+
+| 能力 | 用途 | 自建预览状态与条件 |
+| --- | --- | --- |
+| AI 角色与自由聊天 | 根据角色设定和会话上下文生成对话，探索长期互动。 | 需自行创建角色、配置提示词与模型服务。隔离环境下使用模拟模型验证过聊天，真实模型未验收。 |
+| 记忆与上下文 | 使用近期消息、摘要或语义检索等上下文，让角色参考以往互动。 | 后端包含相关机制；需正确配置 Worker、Redis、数据库和所需模型，真实服务与记忆效果尚需验证。 |
+| 剧情模式 | 在故事场景中与角色互动，以对话、情节和选择推进叙事。 | 客户端包含剧情入口；空库无官方故事或角色，需自备有权使用的内容和配置；完整流程未验收。 |
+| 角色、世界和创作 | 创建或管理角色和世界，探索不同的互动体验。 | 包含相关界面和接口；可用功能取决于账号权限、数据、配置及版本，需逐项验证。 |
+| 语音与图片 | 提供语音及图片相关界面或服务对接。 | 依赖自配的服务、授权及权限；真实流程未验收，部分后台相关设置首次保存有已知问题。视频生成在本预览版关闭。 |
+| Telegram Bot | 轻聊、角色展示、Mini App 入口、多语言及可选运营/客服能力。 | 需要自己的 Bot、兼容后端和服务配置；真实 Telegram、支付及公网 Webhook 尚未验收。 |
+| 管理后台 | 为运营者提供业务管理界面。 | 仅发布静态包，不提供源码；部分 Telegram 公告、召回和邮件功能受限，不能仅靠运行时配置开启。 |
+
+### AI 角色如何工作？
+
+1. 部署者创建角色、配置模型服务与自己有权使用的提示词；用户选择角色并发送消息。
+2. 后端结合角色设定、近期会话及可用的记忆上下文，调用经配置和允许的 AI 服务生成回复。
+3. 用户发起的对话可通过 HTTP SSE 返回流式数据，异步消息使用 WebSocket；客户端呈现消息和互动界面。
+4. Worker 消费后台任务，处理记忆摘要、向量和状态更新等工作；具体行为取决于模块、配置、服务及权限。
+
+这是项目的逻辑机制，不代表所有功能开箱即用，也不保证长期记忆质量、角色一致性或模型效果。初始模板和模型配置缺失时不能直接聊天。
+
+## 系统架构
+
+下图展示自建环境的**逻辑关系**，不是一键部署后自动包含所有服务的承诺。用户端、Bot 和管理端需分别启动或托管；外部服务需部署者自行选择和配置。
+
+```mermaid
+flowchart LR
+    User[用户] --> App["Soulthread App / Web<br/>客户端源码"]
+    User --> TG["Telegram Bot<br/>源码"]
+    Operator[管理员] --> Admin["管理后台<br/>静态文件"]
+    Admin --> Proxy["同源反向代理<br/>需自行部署"]
+    App -->|HTTP / SSE / WebSocket| API["后端 API<br/>闭源镜像"]
+    TG -->|HTTP| API
+    Proxy -->|"/api/v1/ 和 /static/"| API
+    API --> DB[("PostgreSQL + pgvector<br/>数据库卷")]
+    API --> Redis[("Redis<br/>队列卷")]
+    Worker["后端 Worker<br/>闭源镜像"] --> DB
+    Worker <--> Redis
+    API --> Static[("静态文件卷")]
+    Worker --> Static
+    Templates["自备提示词与配置<br/>只读挂载"] --> API
+    Templates --> Worker
+    API -.->|按需配置并允许| External["AI / 语音 / 图片等外部服务"]
+    Worker -.->|按需配置并允许| External
+```
+
+AI 服务允许列表仅覆盖文档中已核验的调用路径，**不等同于全局网络防火墙**。默认 Compose 网络允许出站；外部供应商的隐私、费用、授权及网络策略由部署者负责。
+
+## 发行内容和技术栈
+
+| 部分 | 交付方式 | 技术及可修改范围 |
+| --- | --- | --- |
+| [`apps/client`](apps/client/README.md) | App / Web 自有源码，Apache-2.0 | Expo SDK 57、React Native、React、TypeScript；可修改源码并自行构建。 |
+| [`apps/telegram-bot`](apps/telegram-bot/README.md) | Telegram Bot 自有源码，Apache-2.0 | Node.js / TypeScript；可修改源码并配置兼容后端。 |
+| [`distributions/admin/0.1.1-preview`](distributions/admin/0.1.1-preview/README.md) | 已编译管理后台静态文件 | 允许依条款使用和再分发；不提供源码，不能按源码重新构建。 |
+| 后端 API / Worker | `ghcr.io/fishkiller111/sorcery-backend:0.1.0-preview` | Go 后端闭源；同一镜像以不同命令运行 API 与 Worker，可通过支持的配置和 API 集成。 |
+| [`deploy/local`](deploy/local/README.md) | 空数据库本机预览编排 | Docker Compose、PostgreSQL + pgvector、Redis；需自行准备数据和配置。 |
+
+客户端原项目图片、SVG、音频和视频以自制占位素材替代，视觉与故事体验会降级。不要假定原项目的官方角色、故事或素材随此版本提供。示例地址和占位内容不是可直接上线的服务。
+
+## 快速开始：空库后端
+
+### 前提和版本
+
+- Docker Engine / Docker Desktop、Docker Compose、Python 3；本发行镜像目前仅提供 **Linux ARM64**，尚无已发布的 AMD64 镜像。
+- 镜像标签：`ghcr.io/fishkiller111/sorcery-backend:0.1.0-preview`。
+- 镜像 manifest digest：`sha256:ebc8897f11ede32755cdf0df6d5aaf91ca96717831392fd25a22beacab5d9e66`。
+- 示例仅面向单机隔离开发；数据库使用 `sslmode=disable`，Redis 未设密码，生产需另行加固。
+
+克隆本仓库后，在仓库根目录运行：
+
+```bash
 cd deploy/local
 python3 setup.py
+# 仅对全新、完全空白的数据库初始化，不要用于已有库。
 docker compose --env-file .env up -d --wait db redis
 docker compose --env-file .env run --rm init
 docker compose --env-file .env up -d api worker
 curl http://127.0.0.1:18888/api/v1/health
 ```
 
-初始化**只用于全新空库**，不创建管理员、角色、剧情、模型供应商或原产品资源。随后根据[自建文档](deploy/local/README.md)自行创建管理员、配置业务数据、提示词、服务及 AI 出网白名单；初始状态不能直接聊天。切勿对已有数据库重复初始化。健康检查不等于聊天或其他业务已通过验收。
+`setup.py` 会生成随机密码、JWT 密钥和独立配置，已有文件时拒绝覆盖。初始化只创建数据库结构，不创建管理员、角色、故事、模型供应商或其他业务数据；不可为了重试而删除有价值的卷。API 默认仅监听本机 `127.0.0.1:18888`；健康检查通过不代表聊天、支付、邮件、语音或 AI 已可用。
 
-## 开发环境
+### 创建管理员和配置内容
 
-需要 Node.js 22.13 或更高版本；本地验证环境为 macOS arm64 和 Node.js 26。首次安装需要访问 npm；使用 `--legacy-peer-deps` 是现有锁文件的安装条件，不能说明所有 peer 组合已经验证。**不要将真实账户密码、令牌、数据库凭据或支付密钥填入客户端变量。**
+```bash
+# 在 deploy/local 中运行；交互输入自己设置的密码，不写入命令行。
+python3 admin-password.py
+docker compose --env-file .env run --rm -e SOULTHREAD_ADMIN_EMAIL=you@example.com admin-init
+```
+
+把邮箱替换为自己的地址。确认管理员**创建成功后**，再单独执行 `rm -f private/admin_password` 删除一次性密码文件。已存在管理员时该初始化会拒绝重复创建。
+
+接下来在私有 `config.yaml` 和 `.env` 中配置自己的模型服务、凭据和允许列表，并准备具有使用权的角色、素材及提示词；详见[空库自建说明](deploy/local/README.md)和[提示词说明](deploy/local/operator-prompts.md)。缺少模板或许可配置时，聊天不会回退到原产品内容。密钥不要写入仓库或公开客户端。
+
+## 启动 App / Web
+
+需要 Node.js **22.13 或更高版本**。以下命令从仓库根目录执行：
 
 ```bash
 cd apps/client
 npm ci --legacy-peer-deps --no-audit --no-fund
 cp .env.example .env.local
-# 编辑 .env.local，填写自己控制的测试 API、隐私政策和服务条款地址。
+# 编辑 .env.local：桌面本机后端默认 http://localhost:18888
 npm run web
 ```
 
-`EXPO_PUBLIC_API_HOST` 是 API 的根地址，不带 `/api/v1`，默认 `http://localhost:8888`。客户端随后自动追加 `/api/v1`。若使用本仓库 `deploy/local` 的默认设置，桌面浏览器应将 `.env.local` 的 `EXPO_PUBLIC_API_HOST` 设为 `http://localhost:18888`；修改 `API_PORT` 时同步调整。手机的 localhost 指手机自身；默认后端只监听开发机回环地址，手机不能直接使用开发机局域网 IP 访问，需自行设置受控代理或隧道。生产服务须使用 HTTPS / WSS。
+将 `EXPO_PUBLIC_API_HOST` 设为 API 根地址，不带 `/api/v1`；使用上面的后端默认端口时设置为 `http://localhost:18888`。真机的 localhost 是手机自身，后端默认仅监听开发机回环地址，需自行设置受控代理或隧道。构建 Web 使用 `npm run build:web`；原生入口及配置详见[客户端文档](apps/client/README.md)，iOS / Android 真机尚未验收。
 
-未配置运营者真实有效的 HTTPS 隐私政策和服务条款时，客户端有意禁用登录注册同意与部分结算、AI 数据同意入口；仅填占位地址不等于法律文本真实有效。`EXPO_PUBLIC_*` 会进入客户端构建产物，不得放任何秘密。
+`EXPO_PUBLIC_*` 会进入客户端构建产物，**不能放密钥**。登录与注册等流程需要自建者配置自己真实有效的 HTTPS 隐私政策与服务条款；不配置时相关同意入口会禁用，占位地址不等于合规。
 
-## 测试与 Web 构建
-
-```bash
-cd apps/client
-npm run typecheck
-npm run test:config
-npm run test:soft-upsell
-EXPO_PUBLIC_APP_SITE_URL=https://app.example.invalid \
-EXPO_PUBLIC_MARKETING_SITE_URL=https://site.example.invalid \
-npm run build:web
-```
-
-上面 example.invalid 地址仅用于隔离构建，不是实际可用的政策、生产服务或后端。Web 产物位于 `apps/client/dist/`，未被提交到本仓库。Web 构建成功不代表线上功能、原生设备或真实业务已验收。
-
-本项目无需在客户端保存服务端密钥。后端已提供上述空库预览镜像和自建配置，但不适合直接用于生产；不要假定健康接口通过就代表聊天、音频、支付等功能可用。具体配置说明见[客户端文档](apps/client/README.md)。
-
-## Telegram Bot
-
-Bot 源码位于 `apps/telegram-bot/`，需自行准备兼容的后端、Telegram 测试 Bot 和私密配置：
+## 启动 Telegram Bot
 
 ```bash
 cd apps/telegram-bot
 npm ci
 cp .env.example .env
-# 编辑 .env，填写你自己的服务地址和测试凭据，不要提交此文件。
-npm run typecheck
-npm run test:urlshim
+# 填写自己的 BOT_TOKEN、WEB_APP_URL、MARKETING_URL 和 API_BASE_URL
 npm run dev
 ```
 
-本地 polling 会删除该 Telegram Bot 当前 webhook；测试时请使用独立测试 Bot。真实 Telegram、支付与后端联调尚未验收。配置说明、Webhook、模拟测试和自定义注意事项见 [Bot README](apps/telegram-bot/README.md)；不要将密钥写入客户端、仓库或 issue。
+按 [Bot 文档](apps/telegram-bot/README.md) 配置自己的 Telegram Bot、可访问的地址和兼容后端。默认 polling 会删除该 Bot 当前的 webhook，请使用独立测试 Bot，勿直接使用生产 Token。真实 Telegram、支付、Mini App 和公网 webhook 尚未验收，客服知识与品牌文案需自行审查替换。
 
-## 管理后台静态预览
+## 部署管理后台
 
-管理后台只提供[已编译静态文件](distributions/admin/0.1.1-preview/README.md)，不提供源码。按包内说明校验 SHA-256，把 `static/` 部署到静态服务器，并将同源 `/api/v1/` 和 `/static/` 反向代理到兼容后端。该版本部分 Telegram 公告、召回与邮件功能固定受限，不能仅通过运行时配置开启。静态包不代替后端鉴权或安全控制。
+1. 使用 [管理端静态包](distributions/admin/0.1.1-preview/README.md) 或 Release 附件，在包内执行 `shasum -a 256 -c SHA256SUMS` 校验。
+2. 将 `static/` 部署到自己的静态服务器，按单页应用配置路由回退；把同源 `/api/v1/` 与 `/static/` 反向代理至兼容后端。示例及安全边界见管理端文档。
+3. 使用上一步自己创建的管理员登录，再配置业务数据。静态界面不是后端权限控制的替代品。
 
-## 二次开发
+## 二次开发与测试
 
-路由在 `apps/client/app/`，业务组件与页面在 `apps/client/src/`，HTTP／WebSocket 客户端在 `apps/client/src/api/`；在自己的分支上修改并运行上述检查。静态素材只能使用自己有权使用及分发的内容；App 包名、iOS Google 登录配置和签名默认是占位，发布移动应用前需配置自己的账号和平台能力。后端以镜像分发，管理端只分发静态资源，不提供这两部分源代码。
+- **客户端**：页面路由位于 `apps/client/app/`，业务与 UI 位于 `apps/client/src/`，请求与流式接口位于 `apps/client/src/api/`。修改源码后运行类型检查、配置测试和 Web 构建。
+- **Bot**：入口和配置在 `apps/telegram-bot/src/`，可修改命令、多语言及服务集成；变更前确认兼容的后端接口。
+- **后端与管理端**：不提供源码。后端支持按文档配置、自建内容及通过公开接口集成；管理端支持静态托管与代理配置，不承诺源码级修改或插件机制。
 
-语音可能加载第三方 SDK，其他可选功能涉及 Telegram、Apple、Google 和支付服务；部署者需自行评估配置、网络、用户同意、隐私和第三方许可。当前缺少完整第三方 notice，`standard-navigation@0.0.5` 上游包的完整许可证文本尚待核实；请见 [依赖与许可状态](THIRD-PARTY-STATUS.md)。
+```bash
+# App：在 apps/client 中
+npm run typecheck
+npm run test:config
+npm run test:soft-upsell
+npm run build:web
+
+# Bot：在 apps/telegram-bot 中
+npm run typecheck
+npm run test:urlshim
+npm run build
+```
+
+App 构建所用站点变量需按[客户端文档](apps/client/README.md)设置；示例地址只适合隔离构建。更多 Bot 模拟测试及前置条件见 [Bot 文档](apps/telegram-bot/README.md)。构建或健康检查通过不等于真实支付、聊天、生产安全或设备体验通过。
+
+## 已知限制、安全与许可
+
+- 客户端运行依赖于 2026-11-03 的本地审计为 17 项，其中 **5 high、0 critical**；结果可能变化。请重新评估并修复后再考虑生产，见[第三方依赖状态](THIRD-PARTY-STATUS.md)。
+- `standard-navigation@0.0.5` 上游完整许可证文本仍待核实；需自行检查实际分发组件及第三方许可义务。
+- 视频生成功能暂不可用；空库中部分后台 LLM、语音通话及 AI 生图设置首次保存存在已知问题。真实 AI、邮件、Telegram、支付、语音、iOS / Android 和生产反向代理均未完成验收。
+- 空库无预设套餐时，内存中有临时免费额度和权限；具体约束、外联允许列表、备份与运维风险见[自建文档](deploy/local/README.md)。保留数据库、Redis、静态文件及私有配置的备份；不要对有价值的数据执行 `docker compose down -v`。
+- 本项目有权开放的客户端和 Bot 自有源码采用 [Apache-2.0](LICENSE)；后端自有二进制的免费商用及再分发条款见[后端条款](licenses/backend/DISTRIBUTION-TERMS.md)，管理端见其发行条款。第三方依赖、素材、服务及商标不因源码许可证自动获授权。
