@@ -58,7 +58,7 @@ def main() -> None:
         raise
     print('已创建独立配置和空 prompts 目录。请妥善保管 .env 和 private/。')
     print('项目名:', project)
-    print('镜像地址为预设占位；发布前无法拉取，请先确认发行版本。')
+    print('默认镜像为已公开的 0.1.0-preview（仅 linux/arm64）；请核对自建文档中的版本和 digest。')
 
 if __name__ == '__main__':
     main()

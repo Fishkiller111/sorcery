@@ -1,6 +1,6 @@
 # 后端镜像本机自建（空数据库预览）
 
-> **发行状态：本方案为待验收预览，镜像尚未发布；在镜像真正公开并核验可拉取之前，不要把示例地址当作可用下载。** 后端源码不开放，仅使用发行镜像。以下只面向独立测试环境，不是生产安全方案。
+> **发行状态：空库预览镜像已公开，仅支持 linux/arm64。** 后端源码不开放，仅使用发行镜像。真实第三方服务和生产部署尚未验收；以下只面向独立测试环境，不是生产安全方案。
 
 ## 默认状态
 
@@ -20,7 +20,7 @@ python3 setup.py
 
 脚本生成随机数据库密码、JWT 密钥和独立 Compose 项目名，写入权限受限的 `.env` 和 `private/`，并从 `config.example.yaml` 创建独立 `config.yaml`；若已存在则拒绝覆盖。`config.yaml` 已被忽略，配置里面的密钥也不得提交。`prompts/` 初始为空。切勿提交、分享或记录 `.env` 和 `private/`；有 Docker 控制权者仍可读取容器环境。
 
-`.env` 默认指定计划中的镜像名 `ghcr.io/fishkiller111/sorcery-backend:0.1.0-preview`，**不表示该镜像已经发布**。发布后按实际版本修改 `SOULTHREAD_IMAGE`，并核对发行 digest。`API_PORT` 可改为本机空闲端口；不要把 `127.0.0.1` 随意改成公网监听。
+`.env` 默认指定公开预览镜像 `ghcr.io/fishkiller111/sorcery-backend:0.1.0-preview`，其公开 manifest digest 为 `sha256:ebc8897f11ede32755cdf0df6d5aaf91ca96717831392fd25a22beacab5d9e66`。仅支持 linux/arm64；更新版本时按实际发行信息修改 `SOULTHREAD_IMAGE` 并核对 digest。`API_PORT` 可改为本机空闲端口；不要把 `127.0.0.1` 随意改成公网监听。
 
 `config.yaml` 是空白服务配置；根据自己的服务逐项配置 LLM、向量模型、邮件、语音、OAuth 等，绝不使用他人的密钥或地址。某些代码会有供应商地址回退，空配置不是网络安全策略。两个 JWT 密钥与数据库密码自动生成并保存在 `.env`。数据库客户端目前使用 `sslmode=disable`，此示例仅适合单机受控网络，不适合跨不受信任网络连接数据库。
 
@@ -44,8 +44,9 @@ curl http://127.0.0.1:18888/api/v1/health
 ```sh
 python3 admin-password.py
 docker compose --env-file .env run --rm -e SOULTHREAD_ADMIN_EMAIL=you@example.com admin-init
-rm -f private/admin_password
 ```
+
+确认管理员**创建成功后**，再单独执行 `rm -f private/admin_password` 删除一次性密码文件。
 
 将 `you@example.com` 换成自己实际使用的管理员邮箱。只允许数据库中没有管理员时运行；已存在管理员时将拒绝创建。若命令失败，确认原因后再删除一次性密码文件；不要提交该文件。为使镜像内非 root 用户能读取，文件本身为只读、宿主上的 `private/` 为 0700；确保目录不被分享或备份到公开位置。
 

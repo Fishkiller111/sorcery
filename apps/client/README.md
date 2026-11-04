@@ -26,7 +26,7 @@ Expo 原生入口 `npm run ios` / `npm run android` 需要相应开发环境和�
 | 配置 | 说明 |
 |---|---|
 | `EXPO_PUBLIC_API_HOST` | API 根地址，不含 `/api/v1`，要求 HTTP(S)、不可包含账户、查询或片段；未设置时为 `http://localhost:8888`；聊天 WS/WSS 从此地址派生。 |
-| `EXPO_PUBLIC_APP_STATIC_BASE` | 自有且具有分发权的静态素材源；未设置或格式无效时使用透明占位，不会请求远程地址；私有镜像仅完成部分原媒体比对，尚不能假定它包含或不包含全部对应素材。 |
+| `EXPO_PUBLIC_APP_STATIC_BASE` | 自有且具有分发权的静态素材源；未设置或格式无效时使用透明占位，不会请求远程地址；公开预览镜像仅完成已知文件的部分原媒体比对，不能据此推断全部素材均已核查。 |
 | `EXPO_PUBLIC_APP_SITE_URL` | 公开 App 根地址；用于分享和 OAuth 等。移动端无法确定页面地址时应显式配置。 |
 | `EXPO_PUBLIC_MARKETING_SITE_URL` | 自有营销网站；社交栏的该入口只接受 HTTPS，留空不显示。 |
 | `EXPO_PUBLIC_SOCIAL_X_URL` / `EXPO_PUBLIC_SOCIAL_TELEGRAM_URL` | 自己的 HTTPS 社交链接；留空不显示。 |
