@@ -38,6 +38,9 @@ def main() -> None:
         'API_PORT': '18888',
         'DB_HOST': 'db', 'DB_USER': 'sorcery', 'DB_NAME': 'sorcery', 'DB_PASS': password,
         'REDIS_HOST': 'redis', 'REDIS_PASS': '',
+        # Explicit operator approvals; empty means the covered AI requests are blocked.
+        'SOULTHREAD_ALLOWED_AI_ENDPOINTS': '', 'SOULTHREAD_ALLOWED_AI_MODELS': '',
+        'SOULTHREAD_ALLOWED_IMAGE_ORIGINS': '',
         'JWT_ACCESS_SECRET': secrets.token_hex(32), 'ADMIN_JWT_SECRET': secrets.token_hex(32),
         'SOULTHREAD_BOOTSTRAP_DATABASE_URL': f'postgres://sorcery:{password}@db:5432/sorcery?sslmode=disable',
     }
