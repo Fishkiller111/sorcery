@@ -26,8 +26,6 @@
 
 [Visit website](https://soulthread.talk/) · [Distribution details](#what-is-sorcery) · [Self-hosting](#quick-start-empty-backend-preview) · [简体中文](README.md)
 
-> **Preview, not production-ready.** The client runtime dependency audit recorded 5 unresolved high-severity findings (2026-11-03). Real AI providers, Telegram, payments, voice, iOS and Android devices, and production deployment have not been fully verified. Some admin settings cannot initially be saved on an empty database, and video generation is disabled in this backend preview. Review [security and third-party status](THIRD-PARTY-STATUS.md) before deploying.
-
 ## What is Sorcery?
 
 Sorcery / Soulthread is an AI companion and role-play application suite. Its client lets users discover or create characters, exchange messages in Free Chat, and explore story and world-based experiences. Operators can use a management console and a Telegram bot alongside a shared API. The product includes interfaces for features such as voice, images, accounts and subscriptions, but availability depends on configuration, selected services and the limitations of this preview.
@@ -50,13 +48,13 @@ Third-party components, services, trademarks and assets retain their own terms. 
 
 ## Main capabilities
 
-These describe the product's code and intended workflows, not a promise that each integration works out of the box:
+Capabilities and their configuration requirements:
 
 - **AI characters and Free Chat:** browse or create characters, start conversations and use the HTTP / WebSocket client. Responses depend on operator-provided prompts, model configuration and a compatible backend.
 - **Stories and worlds:** screens for story entry and scenes, world exploration and creation. A fresh self-hosted database has no original stories, worlds or characters; operators add their own authorized content.
 - **Memory and asynchronous processing:** the backend separates the API from a worker and uses PostgreSQL/pgvector and Redis for persistence and background work. Availability and quality depend on configuration and an active worker.
-- **Voice, media and creation:** the client has voice, image and video-related interfaces. Providers and credentials are external; image and voice administration has known empty-database setup issues, and **video generation is disabled** in this preview. A visible UI does not guarantee a working integration.
-- **Accounts and operations:** the client contains account and entitlement interfaces; the static console provides management screens and requires an operator-created administrator. Some Telegram announcement/recall and email functions are restricted in this build. Real payment and authentication provider flows are not verified.
+- **Voice, media and creation:** the client has voice, image and video-related interfaces. Providers and credentials are external; image and voice administration has known empty-database setup issues, and **video generation is disabled** in this preview.
+- **Accounts and operations:** the client contains account and entitlement interfaces; the static console provides management screens and requires an operator-created administrator. Some Telegram announcement/recall and email functions are restricted in this build.
 - **Telegram bot:** lightweight chat, character displays, Mini App entry and multilingual/optional support and operations flows. It requires a compatible backend and the operator's own Telegram configuration. Existing support and marketing copy must be reviewed and adapted before reuse.
 
 ## Architecture
@@ -169,7 +167,7 @@ Use the [prebuilt admin distribution](distributions/admin/0.1.1-preview/README.m
 
 An isolated fresh-clone test verified that schema initialization produced **218 empty tables**, rejected repeated initialization, allowed an operator-created administrator to log in, and preserved admin data after a restart. API and worker health checks passed; an isolated mock provider was used for a chat test. These results do not prove production readiness, real provider functionality, native-device functionality or a public-network deployment. The clean-clone test did not exercise the documented host-loopback `curl` path.
 
-The client runtime dependency audit found **5 high, 10 moderate and 2 low** findings as of 2026-11-03; none should be treated as a current clean bill of health. The complete upstream license text for `standard-navigation@0.0.5` is still unresolved. Consult [third-party status](THIRD-PARTY-STATUS.md), the component notices and your own legal and security review before distribution or deployment.
+For dependency, security and third-party licensing details, see [third-party status](THIRD-PARTY-STATUS.md).
 
 ## License
 
