@@ -1,0 +1,1 @@
+var e=[{id:`zh`,label:`中文（主语言）`},{id:`en`,label:`English`},{id:`jp`,label:`日本語`},{id:`ru`,label:`Русский`},{id:`es`,label:`Español`}];export{e as t};

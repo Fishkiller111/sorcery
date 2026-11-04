@@ -1,0 +1,1 @@
+var e=16/9,t=4/3;function n(n,r){if(n<=0||r<=0)return`16:9`;let i=n/r;return Math.abs(i-e)<=Math.abs(i-t)?`16:9`:`4:3`}function r(e){return e===`16:9`?`aspect-video`:`aspect-[4/3]`}export{r as n,n as t};

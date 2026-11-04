@@ -1,0 +1,1 @@
+function e(e,t){if(!e)return``;let n=e;return n=e.startsWith(`http://`)||e.startsWith(`https://`)||e.startsWith(`/`)?e:`/${e}`,t!==void 0&&t!==``&&!n.includes(`?`)&&(n+=`?v=${t}`),n}export{e as t};

@@ -8,7 +8,7 @@
 
 - [`apps/client`](apps/client/README.md)：Expo Router 客户端、环境变量、源码结构、Web／原生开发、构建和限制。
 - [`apps/telegram-bot`](apps/telegram-bot/README.md)：Telegram Bot 源码、配置、开发及测试。
-- [`distributions/admin/0.1.0-preview`](distributions/admin/0.1.0-preview/README.md)：管理后台静态文件及第三方许可证，不含管理端源码。
+- [`distributions/admin/0.1.1-preview`](distributions/admin/0.1.1-preview/README.md)：管理后台静态文件及第三方许可证，不含管理端源码。
 - [`deploy/local`](deploy/local/README.md)：空库自建预览配置与操作说明；后端镜像尚未发布。
 - [`licenses/backend`](licenses/backend/README.md)：后端候选的第三方许可及对应第三方源码材料，不含本项目闭源后端源码。
 - [`apps/client/assets/PLACEHOLDERS.md`](apps/client/assets/PLACEHOLDERS.md)：原图片、SVG、音频和视频由自制占位素材替换；实际视觉及故事体验会降级。
@@ -26,7 +26,7 @@ cp .env.example .env.local
 npm run web
 ```
 
-`EXPO_PUBLIC_API_HOST` 是 API 的根地址，不带 `/api/v1`，默认 `http://localhost:8888`。客户端随后自动追加 `/api/v1`。手机的 localhost 指手机自身；真机应填写设备可访问的测试服务器地址，生产服务须使用 HTTPS / WSS。
+`EXPO_PUBLIC_API_HOST` 是 API 的根地址，不带 `/api/v1`，默认 `http://localhost:8888`。客户端随后自动追加 `/api/v1`。若使用本仓库 `deploy/local` 的默认设置，桌面浏览器应将 `.env.local` 的 `EXPO_PUBLIC_API_HOST` 设为 `http://localhost:18888`；修改 `API_PORT` 时同步调整。手机的 localhost 指手机自身；默认后端只监听开发机回环地址，手机不能直接使用开发机局域网 IP 访问，需自行设置受控代理或隧道。生产服务须使用 HTTPS / WSS。
 
 未配置运营者真实有效的 HTTPS 隐私政策和服务条款时，客户端有意禁用登录注册同意与部分结算、AI 数据同意入口；仅填占位地址不等于法律文本真实有效。`EXPO_PUBLIC_*` 会进入客户端构建产物，不得放任何秘密。
 
@@ -64,7 +64,7 @@ npm run dev
 
 ## 管理后台静态预览
 
-管理后台只提供[已编译静态文件](distributions/admin/0.1.0-preview/README.md)，不提供源码。按包内说明校验 SHA-256，把 `static/` 部署到静态服务器，并将同源 `/api/v1/` 和 `/static/` 反向代理到兼容后端；后端镜像目前尚未发布。该版本部分 Telegram 公告、召回与邮件功能固定受限，不能仅通过运行时配置开启。静态包不代替后端鉴权或安全控制。
+管理后台只提供[已编译静态文件](distributions/admin/0.1.1-preview/README.md)，不提供源码。按包内说明校验 SHA-256，把 `static/` 部署到静态服务器，并将同源 `/api/v1/` 和 `/static/` 反向代理到兼容后端；后端镜像目前尚未发布。该版本部分 Telegram 公告、召回与邮件功能固定受限，不能仅通过运行时配置开启。静态包不代替后端鉴权或安全控制。
 
 ## 二次开发
 
